@@ -1,0 +1,16 @@
+body {
+	background-color: #f0f0f0;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#wrapper {
+	background-color: #fefefe;
+	max-width: 1024px;
+	min-width: 512px;
+	margin-right: auto;
+	margin-left: auto;
+	/* debug */
+	height: 1024px;
+	
+}
