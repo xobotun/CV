@@ -10,9 +10,9 @@ body {
 	min-width: 512px;
 	margin-right: auto;
 	margin-left: auto;
-	/* debug */
-	height: 1024px;
 	display: table;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.25), 0 0 10px 0 rgba(0,0,0,0.15);
+	padding: 1.5em;
 }
 
 .section {
@@ -24,7 +24,7 @@ body {
 	font-size: 2em;
 	display: table-cell;
 	text-align: center;
-	color: #444444;
+	color: #333333;
 	font-family: "Webfont", Arial, sans-serif;
 	font-weight: 100;
 }
