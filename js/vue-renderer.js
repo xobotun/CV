@@ -1,6 +1,23 @@
-﻿var view_model = new Vue({
+﻿Vue.component('education-place', {
+	props: [
+		'name',
+		'where',
+		'began',
+		'ended',
+		'description'
+	],
+	template: 	'<div class="section__contents">\
+					{{name}}@{{where}}\
+					<br/>\
+					From {{began}} till {{ended}}\
+					<br/>\
+					{{description}}\
+				</div>'
+})
+
+var view_model = new Vue({
 	el: '#wrapper',
-	data: {
+	/*data: {
 		message: 
 			'<div class="section">'+
 				'<section>' +
@@ -21,5 +38,6 @@
 					'</div>' +
 				'</section>' +
 			'</div>'
-	}
+	}*/
+	data: data
 })

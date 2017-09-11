@@ -10,7 +10,9 @@
 	</head>
 	<body>
 		<div id="wrapper" >
-			{{ message }}
+			<div is="education-place" v-for="place in education_history" v-bind="place">
+			{{place}}
+			</div>
 		</div>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/vue-renderer.js"></script>
