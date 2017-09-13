@@ -6,7 +6,7 @@
 		'ended',
 		'description'
 	],
-	template: 	'<div class="section__contents">\
+	template: 	'<div>\
 					{{name}}@{{where}}\
 					<br/>\
 					From {{began}} till {{ended}}\

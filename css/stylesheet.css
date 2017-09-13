@@ -3,6 +3,10 @@ body {
 	margin: 1.5em;
 }
 
+* {
+/*	border: 1px solid black; */
+}
+
 #wrapper {
 	background-color: #fefefe;
 	max-width: 1024px;
@@ -22,19 +26,25 @@ body {
 	width: 29%;
 	font-size: 2em;
 	display: table-cell;
-	text-align: center;
+	text-align: right;
 	color: #333333;
 	font-family: "Webfont", Arial, sans-serif;
 	font-weight: 100;
+	vertical-align: top;
+	padding: 1rem;
 }
 
 .section__contents {
-	width: 69%;
+	width: 100%;
 	font-size: 1.2em;
-	display: table-cell;
+	display: inline-block;
 	color: #222222;
 	font-family: "Webfont", Arial, sans-serif;
 	font-weight: 100;
+	float: right;
+	clear: right;
+	padding: 1rem;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {
