@@ -3,7 +3,9 @@
 		general: {
 			name: "Павел Маминов",
 			race: "Человек",
-			profession: [{
+			gender: "Мужчина",
+			birthday: new Date(1996, 3, 10),
+			professions: [{
 				name: "Программист",
 				level: 7
 			},
@@ -81,12 +83,14 @@
 			photo_urls: ["diploma_side_1"]
 		}]},
 		skills:{
-			programming:{
+			max_skill_level: 100,
+			skill_families: [{
+				name: "Программирование",
 				description: "Сводка языков программирования, которыми я владею.",
-				skill_sets: [{
-					general_name: "C#",
+				skillsets: [{
+					name: "C#",
 					level: 30,
-					date_started: new Date(2016),
+					began: new Date(2016),
 					subskills: [{
 						name: "linq",
 						level: 15
@@ -101,18 +105,18 @@
 					}]
 				},
 				{
-					general_name: "C++",
+					name: "C++",
 					level: 40,
-					date_started: new Date(2013),
+					began: new Date(2013),
 					subskills: [{
 						name: "stdlib",
 						level: 30
 					}]
 				},
 				{
-					general_name: "Java",
+					name: "Java",
 					level: 50,
-					date_started: new Date(2014),
+					began: new Date(2014),
 					subskills: [{
 						name: "Spring",
 						level: 20
@@ -123,9 +127,9 @@
 					}]
 				},
 				{
-					general_name: "Javascript",
+					name: "Javascript",
 					level: 10,
-					date_started: new Date(2014),
+					began: new Date(2014),
 					subskills: [{
 						name: "Vue.js",
 						level: 30
@@ -134,11 +138,44 @@
 						name: "Ненависть",
 						level: 60
 					}]
-				}]
-			},
-			design:[],
-			general:[],
-			other:[]
+				}]},
+				{
+					name: "Искусство",
+					description: "Всё, про что относится к дизайну-рисованию-творчеству.",
+					skillsets:[
+				]},
+				{
+					name: "Общие навыки",
+					description: "Всё, что так или иначе пригождается в работе.",
+					skillsets:[
+				]},
+				{
+					name: "Прочее",
+					description: "Всё, что не вошло в вышеприведённые категории, но я зачем-то захотел внести сюда.",
+					skillsets:[
+				]}
+			]
 		}
 	}
+}
+
+var preprocessed_data = function(){
+	var raw_data = data();
+	
+	// 1. Inject max_skill_level constant in childs.
+	var max_skill_level = raw_data.skills.max_skill_level;
+	
+	// For programming, design, general_skills, etc.
+	for (skill_family of raw_data.skills.skill_families) {
+		// For each programming language.
+		for (skillset of skill_family.skillsets) {
+			skillset.max_skill_level = max_skill_level;
+			// For each technology in programming language
+			for (subskill of skillset.subskills) {
+				subskill.max_skill_level = max_skill_level;
+			}
+		}
+	}
+	
+	return raw_data;
 }

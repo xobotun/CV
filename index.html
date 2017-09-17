@@ -10,12 +10,32 @@
 	</head>
 	<body>
 		<div id="wrapper" >
+			<section class="section section__contents_maxwidth">
+				<div class="section__contents" is="about-developer" v-bind="general">
+				</div>
+			</section>
 			<section class="section">
-					<header class="section__header">							
-						Образование
-					</header>
-					<div class="section__contents" is="education-place" v-for="place in education_history.primary" v-bind="place">
-					</div>
+				<header class="section__header">							
+					История работы
+				</header>
+				<div class="section__contents" is="work-place" v-for="place in job_history" v-bind="place">
+				</div>
+			</section>
+			<section class="section">
+				<header class="section__header">							
+					Образование
+				</header>
+				<div class="section__contents" is="education-place" v-for="place in education_history.primary" v-bind="place">
+				</div>
+				<div class="section__contents" is="education-place" v-for="place in education_history.secondary" v-bind="place">
+				</div>
+			</section>
+			<section class="section">
+				<header class="section__header">							
+					Навыки
+				</header>
+				<div class="section__contents" is="skill-family" v-for="skill_family in skills.skill_families" v-bind="skill_family">
+				</div>
 			</section>
 		</div>
 		<script type="text/javascript" src="js/data.js"></script>

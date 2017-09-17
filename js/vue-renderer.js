@@ -1,10 +1,57 @@
-﻿Vue.component('education-place', {
+﻿Vue.component('about-developer', {
+	props: [
+		'name',
+		'race',
+		'gender',
+		'birthday',
+		'professions',
+		'alignment',
+		'location',
+		'photo_url'
+	],
+	template: 	'<div>\
+					{{name}}\
+					<br/>\
+					{{race}}, {{gender}}, {{birthday}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
+					<br/>\
+					{{photo_url}}\
+					<br/>\
+					{{location}}\
+				</div>'
+})
+
+Vue.component('work-place', {
 	props: [
 		'name',
 		'where',
 		'began',
 		'ended',
-		'description'
+		'workplace_description',
+		'job_description',
+		'related_skills'
+	],
+	template: 	'<div>\
+					{{name}}@{{where}}\
+					<br/>\
+					From {{began}} till {{ended}}\
+					<br/>\
+					{{workplace_description}}\
+					<br/>\
+					{{job_description}}\
+					<br/>\
+					<span v-for="skill in related_skills">{{skill}} </span>\
+				</div>'
+})
+
+Vue.component('education-place', {
+	props: [
+		'name',
+		'where',
+		'began',
+		'ended',
+		'description',
+		'proof_url',
+		'photo_urls'
 	],
 	template: 	'<div>\
 					{{name}}@{{where}}\
@@ -12,6 +59,56 @@
 					From {{began}} till {{ended}}\
 					<br/>\
 					{{description}}\
+					<span v-if="proof_url"><br/>{{proof_url}}</span>\
+					<br/>\
+					<span v-for="url in photo_urls">{{url}} </span>\
+				</div>'
+})
+
+Vue.component('skill', {
+	props: [
+		'name',
+		'level',
+		'max_skill_level' // Even though it is constant, I have to declare it. Nevermind.
+	],
+	template: 	'<div>\
+					{{name}}\
+					<br/>\
+					{{level}}/{{max_skill_level}}\
+				</div>'
+})
+
+Vue.component('skillset', {
+	props: [
+		'name',
+		'level',
+		'began',
+		'subskills',
+		'max_skill_level'
+	],
+	template: 	'<div>\
+					{{name}}\
+					<br/>\
+					From {{began}}\
+					<br/>\
+					{{level}}/{{max_skill_level}}\
+					<br/>\
+					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
+				</div>'
+})
+
+Vue.component('skill-family', {
+	props: [
+		'name',
+		'description',
+		'skillsets',
+	],
+	template: 	'<div>\
+					{{name}}\
+					<br/>\
+					{{description}}\
+					<br/>\
+					<skillset v-for="skillset in skillsets" v-bind="skillset"></skillset>\
 				</div>'
 })
 
@@ -39,5 +136,5 @@ var view_model = new Vue({
 				'</section>' +
 			'</div>'
 	}*/
-	data: data
+	data: preprocessed_data
 })
