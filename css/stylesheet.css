@@ -47,6 +47,11 @@ body {
     box-sizing: border-box;
 }
 
+.section__contents_maxwidth {
+	display: table-cell; 
+	column-span: all
+}
+
 @media screen and (max-width: 768px) {
 	.section__header {
 		width: 100%;
@@ -57,4 +62,11 @@ body {
 	.section__contents {
 		
 	}
+}
+
+@supports not (column-span: all) {
+  .section__contents_maxwidth {
+    position: absolute;
+    top:0;right:0;left:0;
+  } 
 }
