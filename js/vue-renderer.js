@@ -4,6 +4,7 @@
 		'race',
 		'gender',
 		'birthday',
+		'age',
 		'professions',
 		'alignment',
 		'location',
@@ -12,7 +13,7 @@
 	template: 	'<div>\
 					{{name}}\
 					<br/>\
-					{{race}}, {{gender}}, {{birthday}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
+					{{race}}, {{gender}}, {{age}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
 					<br/>\
 					{{photo_url}}\
 					<br/>\

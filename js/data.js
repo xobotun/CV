@@ -5,6 +5,7 @@
 			race: "Человек",
 			gender: "Мужчина",
 			birthday: new Date(1996, 3, 10),
+			age: "REPORT AS A BUG",
 			professions: [{
 				name: "Программист",
 				level: 7
@@ -13,7 +14,7 @@
 				name: "Художник",
 				level: 3
 			}],
-			alignment: "Lawful Good",
+			alignment: "Законопослушный Добрый",
 			location: "Москва",
 			photo_url: "none yet"
 		},
@@ -159,6 +160,30 @@
 	}
 }
 
+function calculate_age(data) {
+	var now = new Date();
+	var delta = new Date(now - data);
+	var age = delta.getUTCFullYear() - 1970;
+	var age_last_digit = age % 10;
+	
+	var suffix = "";
+	switch(age_last_digit) {
+		case 1: 
+			suffix = "год";
+			break;
+		case 2: 
+		case 3: 
+		case 4: 
+			suffix = "года";
+			break;
+		default:
+			suffix = "лет";
+			break;
+	}
+		
+	return age + " " + suffix;
+}
+
 var preprocessed_data = function(){
 	var raw_data = data();
 	
@@ -176,6 +201,10 @@ var preprocessed_data = function(){
 			}
 		}
 	}
+	
+	// 2. Calculate age.
+	
+	raw_data.general.age = calculate_age(raw_data.general.birthday)
 	
 	return raw_data;
 }
