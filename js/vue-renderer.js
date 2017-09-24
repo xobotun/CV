@@ -27,6 +27,7 @@ Vue.component('work-place', {
 		'where',
 		'began',
 		'ended',
+		'experience',
 		'workplace_description',
 		'job_description',
 		'related_skills'
@@ -34,7 +35,7 @@ Vue.component('work-place', {
 	template: 	'<div>\
 					{{name}}@{{where}}\
 					<br/>\
-					From {{began}} till {{ended}}\
+					From {{began}} till {{ended}}: {{experience}}\
 					<br/>\
 					{{workplace_description}}\
 					<br/>\
@@ -50,6 +51,7 @@ Vue.component('education-place', {
 		'where',
 		'began',
 		'ended',
+		'length',
 		'description',
 		'proof_url',
 		'photo_urls'
@@ -57,7 +59,7 @@ Vue.component('education-place', {
 	template: 	'<div>\
 					{{name}}@{{where}}\
 					<br/>\
-					From {{began}} till {{ended}}\
+					From {{began}} till {{ended}}: {{length}}\
 					<br/>\
 					{{description}}\
 					<span v-if="proof_url"><br/>{{proof_url}}</span>\
