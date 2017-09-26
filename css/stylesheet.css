@@ -59,6 +59,19 @@ body {
 	height: 15em;
 	right: 1.5em;
 	left: 1.5em;
+	text-align: center;
+}
+
+.photo__self {
+	height: 15em;
+	border-radius:50%;
+	vertical-align: middle;
+}
+
+.bio {
+	display: inline-block;
+	text-align: left;
+	margin: 1.5em;
 }
 
 @media screen and (max-width: 768px) {

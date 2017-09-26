@@ -11,13 +11,14 @@
 		'photo_url'
 	],
 	template: 	'<div>\
-					{{name}}\
-					<br/>\
-					{{race}}, {{gender}}, {{age}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
-					<br/>\
-					{{photo_url}}\
-					<br/>\
-					{{location}}\
+					<img class="photo__self" v-bind:src="photo_url"></img>\
+					<span class="bio">\
+						{{name}}\
+						<br/>\
+						{{race}}, {{gender}}, {{age}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
+						<br/>\
+						{{location}}\
+						</span>\
 				</div>'
 })
 

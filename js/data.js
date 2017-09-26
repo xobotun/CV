@@ -16,7 +16,7 @@
 			}],
 			alignment: "Законопослушный Добрый",
 			location: "Москва",
-			photo_url: "none yet"
+			photo_url: "square_photo.jpg"
 		},
 		job_history: [{
 			name: "Инженер-программист",
