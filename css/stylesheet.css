@@ -104,13 +104,15 @@ body {
 }
 
 time {
-	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
-	cursor: help;
 	font-size: 0.7em;
 	top: -0.4em;
 	position: relative;
 	margin-left: 0.1em;
+}
 
+time[title], span[title] {
+	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
+	cursor: help;
 }
 
 /*/

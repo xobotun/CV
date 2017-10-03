@@ -35,11 +35,9 @@ Vue.component('work-place', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
+						<span class="header_qualification">{{name}}</span><span class="header_location" v-bind:title="workplace_description">{{where}}</span>\
 						<br v-if="experience"><time v-if="experience" v-bind:title="\'С \' + began + \' по \' + ended">{{experience}}</time>\
 					</header>\
-					{{workplace_description}}\
-					<br/>\
 					{{job_description}}\
 					<br/>\
 					<span v-for="skill in related_skills">{{skill}} </span>\
