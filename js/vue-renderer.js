@@ -35,8 +35,8 @@ Vue.component('work-place', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="header_qualification">{{name}}</span><span class="header_location" v-bind:title="workplace_description">{{where}}</span>\
-						<br v-if="experience"><time v-if="experience" v-bind:title="\'С \' + began + \' по \' + ended">{{experience}}</time>\
+						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location anything__that_has_title_attribute" v-bind:title="workplace_description">{{where}}</span>\
+						<br v-if="experience"><time class="anything__that_has_title_attribute" v-if="experience" v-bind:title="\'С \' + began + \' по \' + ended">{{experience}}</time>\
 					</header>\
 					{{job_description}}\
 					<br/>\
@@ -57,8 +57,8 @@ Vue.component('education-place', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
-						<br v-if="length"><time v-if="length" v-bind:title="\'С \' + began + \' по \' + ended">{{length}}</time>\
+						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location">{{where}}</span>\
+						<br v-if="length"><time class="anything__that_has_title_attribute" v-if="length" v-bind:title="\'С \' + began + \' по \' + ended">{{length}}</time>\
 					</header>\
 					{{description}}\
 					<span v-if="proof_url"><br/>{{proof_url}}</span>\

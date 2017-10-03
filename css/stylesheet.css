@@ -90,14 +90,14 @@ body {
 /////
 /*/
 
-.header_qualification {
+.entry__header_qualification {
 	font-size: 1.5em;
 	font-weight: 500;
 	display: inline-block;
 	margin-right: 1.3rem;
 }
 
-.header_location {
+.entry__header_location {
 	font-size: 0.7em;
 	font-weight: 900;
 	color: #aaaaaa;
@@ -110,7 +110,7 @@ time {
 	margin-left: 0.1em;
 }
 
-time[title], span[title] {
+.anything__that_has_title_attribute {
 	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
 	cursor: help;
 }
