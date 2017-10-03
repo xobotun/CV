@@ -75,7 +75,7 @@ Vue.component('percentage-bar', {
 		'level',
 		'max_skill_level'
 	],
-	template: '<div class="percentage_bar"><div class="percentage_bar__filling" v-bind:style="\'width:\' + level + \'%\'"></div></div>{{level}} / {{max_skill_level}}'
+	template: '<div class="percentage_bar"><div class="percentage_bar__filling" v-bind:style="\'width:\' + level + \'%\'"></div></div>'
 })
 
 Vue.component('skill', {
@@ -86,7 +86,7 @@ Vue.component('skill', {
 	],
 	template: 	'<div class="skill_list__subskills_list_item">\
 					<span>{{name}}</span>\
-					<percentage-bar v-bind="level" v-bind="max_skill_level"></percentage-bar>\
+					<percentage-bar v-bind:level="level"></percentage-bar>\
 				</div>'
 })
 
@@ -100,8 +100,8 @@ Vue.component('skillset', {
 	],
 	template: 	'<div class="skill_list__item">\
 					<span>{{name}}</span>\
-					<percentage-bar v-bind="level" v-bind="max_skill_level"></percentage-bar>\
-					<br><time class="anything__that_has_title_attribute" v-bind:title="\'С \' + began">{{experience}}</time>\
+					<percentage-bar v-bind:level="level"></percentage-bar>\
+					<br><time class="anything__that_has_title_attribute" v-bind:title="\'С \' + began">{{began}}</time>\
 					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 				</div>'
 })
