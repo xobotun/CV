@@ -62,7 +62,7 @@
 		}],
 		secondary:[{
 			name: "CUDA и машинное обучение~",
-			name: "НОЦ \"Технопарк\"",
+			where: "НОЦ \"Технопарк\"",
 			began: "~2016",
 			ended: "~2016",
 			length: "REPORT AS A BUG",
@@ -72,7 +72,7 @@
 		},
 		{
 			name: "Самсунг",
-			name: "Гнусмас",
+			where: "Гнусмас",
 			began: "~2016",
 			ended: "~2016",
 			length: "REPORT AS A BUG",
