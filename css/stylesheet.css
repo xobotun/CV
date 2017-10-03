@@ -80,6 +80,10 @@ body {
 	margin: 1.5em;
 }
 
+.entry__header {
+	margin: 0.2rem 1.4rem 1rem -0.1rem;
+}
+
 /*/
 /////
 ///    Text styles
@@ -88,17 +92,25 @@ body {
 
 .header_qualification {
 	font-size: 1.5em;
-	font-family: "Webfont", Arial, sans-serif;
 	font-weight: 500;
 	display: inline-block;
-	margin: 0.2rem 1.4rem 1rem -0.1rem;
+	margin-right: 1.5rem;
 }
 
 .header_location {
 	font-size: 0.7em;
-	font-family: "Webfont", Arial, sans-serif;
 	font-weight: 900;
 	color: #aaaaaa;
+}
+
+time {
+	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
+	cursor: help;
+	font-size: 0.7em;
+	top: -0.4em;
+	position: relative;
+	margin-left: 0.1em;
+
 }
 
 /*/

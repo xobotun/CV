@@ -34,10 +34,10 @@ Vue.component('work-place', {
 		'related_skills'
 	],
 	template: 	'<div>\
-					<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
-					<br/>\
-					From {{began}} till {{ended}}: {{experience}}\
-					<br/>\
+					<header class="entry__header">\
+						<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
+						<br v-if="experience"><time v-if="experience" v-bind:title="\'С \' + began + \' по \' + ended">{{experience}}</time>\
+					</header>\
 					{{workplace_description}}\
 					<br/>\
 					{{job_description}}\
@@ -58,10 +58,10 @@ Vue.component('education-place', {
 		'photo_urls'
 	],
 	template: 	'<div>\
-					<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
-					<br/>\
-					From {{began}} till {{ended}}: {{length}}\
-					<br/>\
+					<header class="entry__header">\
+						<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
+						<br v-if="length"><time v-if="length" v-bind:title="\'С \' + began + \' по \' + ended">{{length}}</time>\
+					</header>\
 					{{description}}\
 					<span v-if="proof_url"><br/>{{proof_url}}</span>\
 					<br/>\
