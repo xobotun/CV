@@ -34,7 +34,7 @@ Vue.component('work-place', {
 		'related_skills'
 	],
 	template: 	'<div>\
-					{{name}}@{{where}}\
+					<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
 					<br/>\
 					From {{began}} till {{ended}}: {{experience}}\
 					<br/>\
@@ -58,7 +58,7 @@ Vue.component('education-place', {
 		'photo_urls'
 	],
 	template: 	'<div>\
-					{{name}}@{{where}}\
+					<span class="header_qualification">{{name}}</span><span class="header_location">{{where}}</span>\
 					<br/>\
 					From {{began}} till {{ended}}: {{length}}\
 					<br/>\

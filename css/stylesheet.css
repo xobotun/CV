@@ -7,6 +7,12 @@ body {
 /*	border: 1px solid black; */
 }
 
+/*/
+/////
+///    Blocks & Elements styles
+/////
+/*/
+
 #wrapper {
 	background-color: #fefefe;
 	max-width: 1024px;
@@ -73,6 +79,33 @@ body {
 	text-align: left;
 	margin: 1.5em;
 }
+
+/*/
+/////
+///    Text styles
+/////
+/*/
+
+.header_qualification {
+	font-size: 1.5em;
+	font-family: "Webfont", Arial, sans-serif;
+	font-weight: 500;
+	display: inline-block;
+	margin: 0.2rem 1.4rem 1rem -0.1rem;
+}
+
+.header_location {
+	font-size: 0.7em;
+	font-family: "Webfont", Arial, sans-serif;
+	font-weight: 900;
+	color: #aaaaaa;
+}
+
+/*/
+/////
+///    Mobile version corrections
+/////
+/*/
 
 @media screen and (max-width: 768px) {
 	.section__header {
