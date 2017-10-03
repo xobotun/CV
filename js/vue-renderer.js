@@ -70,16 +70,23 @@ Vue.component('education-place', {
 				</div>'
 })
 
+Vue.component('percentage-bar', {
+	props: [
+		'level',
+		'max_skill_level'
+	],
+	template: '<div class="percentage_bar"><div class="percentage_bar__filling" v-bind:style="\'width:\' + level + \'%\'"></div></div>{{level}} / {{max_skill_level}}'
+})
+
 Vue.component('skill', {
 	props: [
 		'name',
 		'level',
 		'max_skill_level' // Even though it is constant, I have to declare it. Nevermind.
 	],
-	template: 	'<div>\
-					{{name}}\
-					<br/>\
-					{{level}}/{{max_skill_level}}\
+	template: 	'<div class="skill_list__subskills_list_item">\
+					<span>{{name}}</span>\
+					<percentage-bar v-bind="level" v-bind="max_skill_level"></percentage-bar>\
 				</div>'
 })
 
@@ -91,13 +98,10 @@ Vue.component('skillset', {
 		'subskills',
 		'max_skill_level'
 	],
-	template: 	'<div>\
-					{{name}}\
-					<br/>\
-					From {{began}}\
-					<br/>\
-					{{level}}/{{max_skill_level}}\
-					<br/>\
+	template: 	'<div class="skill_list__item">\
+					<span>{{name}}</span>\
+					<percentage-bar v-bind="level" v-bind="max_skill_level"></percentage-bar>\
+					<br><time class="anything__that_has_title_attribute" v-bind:title="\'С \' + began">{{experience}}</time>\
 					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 				</div>'
 })
