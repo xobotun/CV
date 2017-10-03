@@ -15,10 +15,12 @@
 					<div class="bio">\
 						<span class="bio__name">{{name}}</span>\
 						<br/>\
-						{{race}}, {{gender}}, {{age}}, {{alignment}}<br/>\
-						{{professions_list}}\
-						<br/>\
-						{{location}}\
+						<span class="bio__description">\
+							{{race}}, {{gender}}, {{age}}, {{alignment}}<br/>\
+							{{professions_list}}\
+							<br/>\
+							{{location}}\
+						</span>\
 					</div>\
 				</div>'
 })

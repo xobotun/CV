@@ -80,7 +80,6 @@ body {
 	text-align: left;
 	margin: 1.5em;
 	font-family: "Webfont", Arial, sans-serif;
-	font-size: 1.1em;
 }
 
 .entry__header {
@@ -94,8 +93,14 @@ body {
 /*/
 
 .bio__name {
-	font-size: 2em;
+	font-size: 2.2em;
 	font-family: "Times New Roman", Times, serif;
+}
+
+.bio__description {
+	text-align: left;
+	font-size: 1.2em;
+	display: inline-block;
 }
 
 .entry__header_qualification {
@@ -129,14 +134,36 @@ time {
 /////
 /*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 880px) {
 	.section__header {
 		width: 100%;
 		display: block;
 		text-align: center;
+		font-size: 2.5em;
 	}
 
 	.section__contents {
 		
+	}
+	
+	.entry__header {
+		text-align: center;
+	}
+	
+	.bio {
+		display: block;
+		text-align: center;
+	}
+	
+	.bio__name{
+		display: block;
+	}
+	
+	.section__firefox-has-no-column-span-since-2010 {
+		height: 27em;
+	}
+	
+	.section__contents_site_header {
+		height: 27em;
 	}
 }
