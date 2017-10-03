@@ -56,19 +56,20 @@ body {
 
 /* Anti-firefox measures */
 .section__firefox-has-no-column-span-since-2010 {
-	height: 15em;
+	height: 17em;
 }
 
 .section__contents_site_header {
 	position: absolute;	 /* Anti-firefox measures */
 	width: auto;
-	height: 15em;
+	height: 17em;
 	right: 1.5em;
 	left: 1.5em;
 	text-align: center;
+	padding-top: 1em;
 }
 
-.photo__self {
+.bio__photo_self {
 	height: 15em;
 	border-radius:50%;
 	vertical-align: middle;
@@ -78,6 +79,8 @@ body {
 	display: inline-block;
 	text-align: left;
 	margin: 1.5em;
+	font-family: "Webfont", Arial, sans-serif;
+	font-size: 1.1em;
 }
 
 .entry__header {
@@ -89,6 +92,11 @@ body {
 ///    Text styles
 /////
 /*/
+
+.bio__name {
+	font-size: 2em;
+	font-family: "Times New Roman", Times, serif;
+}
 
 .entry__header_qualification {
 	font-size: 1.5em;

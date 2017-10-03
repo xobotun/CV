@@ -5,20 +5,21 @@
 		'gender',
 		'birthday',
 		'age',
-		'professions',
+		'professions_list',
 		'alignment',
 		'location',
 		'photo_url'
 	],
 	template: 	'<div>\
-					<img class="photo__self" v-bind:src="photo_url"></img>\
-					<span class="bio">\
-						{{name}}\
+					<img class="bio__photo_self" v-bind:src="photo_url"></img>\
+					<div class="bio">\
+						<span class="bio__name">{{name}}</span>\
 						<br/>\
-						{{race}}, {{gender}}, {{age}}, {{alignment}}, <span v-for="profession in professions">{{profession.name}}({{profession.level}})/</span>\
+						{{race}}, {{gender}}, {{age}}, {{alignment}}<br/>\
+						{{professions_list}}\
 						<br/>\
 						{{location}}\
-						</span>\
+					</div>\
 				</div>'
 })
 

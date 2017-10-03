@@ -14,6 +14,7 @@
 				name: "Художник",
 				level: 3
 			}],
+			professions_list: "REPORT AS A BUG",
 			alignment: "Законопослушный Добрый",
 			location: "Москва",
 			photo_url: "square_photo.jpg"
@@ -295,6 +296,14 @@ var preprocessed_data = function(){
 	for (education_place of raw_data.education_history.secondary) {
 		education_place.length = calculate_experience(education_place.began, education_place.ended);
 	}
+	
+	// 4. Concat professions list into string.
+	raw_data.general.professions_list = "";
+	for (profession of raw_data.general.professions) {
+		raw_data.general.professions_list += profession.name + "(" + profession.level + ")" + " / ";
+	}
+	raw_data.general.professions_list = raw_data.general.professions_list.slice(0, -3);
+	
 	
 	return raw_data;
 }
