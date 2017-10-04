@@ -29,8 +29,8 @@ Vue.component('work-place', {
 	props: [
 		'name',
 		'where',
-		'began',
-		'ended',
+		'began_text',
+		'ended_text',
 		'experience',
 		'workplace_description',
 		'job_description',
@@ -39,7 +39,7 @@ Vue.component('work-place', {
 	template: 	'<div>\
 					<header class="entry__header">\
 						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location anything__that_has_title_attribute" v-bind:title="workplace_description">{{where}}</span>\
-						<br v-if="experience"><time class="anything__that_has_title_attribute" v-if="experience" v-bind:title="\'С \' + began + \' по \' + ended">{{experience}}</time>\
+						<br v-if="experience"><time class="anything__that_has_title_attribute" v-if="experience" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{experience}}</time>\
 					</header>\
 					{{job_description}}\
 					<br/>\
@@ -51,8 +51,8 @@ Vue.component('education-place', {
 	props: [
 		'name',
 		'where',
-		'began',
-		'ended',
+		'began_text',
+		'ended_text',
 		'length',
 		'description',
 		'proof_url',
@@ -61,7 +61,7 @@ Vue.component('education-place', {
 	template: 	'<div>\
 					<header class="entry__header">\
 						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location">{{where}}</span>\
-						<br v-if="length"><time class="anything__that_has_title_attribute" v-if="length" v-bind:title="\'С \' + began + \' по \' + ended">{{length}}</time>\
+						<br v-if="length"><time class="anything__that_has_title_attribute" v-if="length" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{length}}</time>\
 					</header>\
 					{{description}}\
 					<span v-if="proof_url"><br/>{{proof_url}}</span>\
@@ -101,7 +101,7 @@ Vue.component('skillset', {
 	template: 	'<div class="skill_list__item">\
 					<span>{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
-					<br><time class="anything__that_has_title_attribute" v-bind:title="\'С \' + began">{{began}}</time>\
+					<br><time>{{began}}</time>\
 					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 				</div>'
 })
