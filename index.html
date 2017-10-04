@@ -9,20 +9,20 @@
 		<script type="text/javascript" src="js/vue.js"></script>
 	</head>
 	<body>
-		<div id="wrapper" >
+		<div id="wrapper">
 			<section class="section section__firefox-has-no-column-span-since-2010">
 				<div class="section__contents_site_header" is="about-developer" v-bind="general">
 				</div>
 			</section>
 			<section class="section">
-				<header class="section__header">							
+				<header id="job_history" class="section__header">							
 					История работы
 				</header>
 				<div class="section__contents" is="work-place" v-for="place in job_history" v-bind="place">
 				</div>
 			</section>
 			<section class="section">
-				<header class="section__header">							
+				<header id="education_history" class="section__header">							
 					Образование
 				</header>
 				<div class="section__contents" is="education-place" v-for="place in education_history.primary" v-bind="place">
@@ -31,12 +31,30 @@
 				</div>
 			</section>
 			<section class="section">
-				<header class="section__header">							
+				<header id="skills" class="section__header">							
 					Навыки
 				</header>
 				<div class="section__contents" is="skill-family" v-for="skill_family in skills.skill_families" v-bind="skill_family">
 				</div>
 			</section>
+			<section class="section">
+				<header id="books_read" class="section__header">							
+					Книги
+				</header>
+				<div class="section__contents" is="books-read" v-for="book_read in books" v-bind="book_read">
+				</div>
+			</section>
+		</div>
+		<div class="menu__wrapper">
+			<div class="menu__wrapper_fake_contents">
+				<menu id="menu">
+					<li class="menu__item"><a href="#">В начало</a></li>
+					<li class="menu__item"><a href="#job_history">История работы</a></li>
+					<li class="menu__item"><a href="#education_history">Образование</a></li>
+					<li class="menu__item"><a href="#skills">Навыки</a></li>
+					<li class="menu__item"><a href="#books_read">Книги</a></li>
+				</menu>
+			</div>
 		</div>
 		<script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/vue-renderer.js"></script>
