@@ -95,7 +95,7 @@ body {
 	height: 0.5em;
 	display: inline-block;
 	float: right;
-	margin-right: 40%;
+	margin-right: 30%;
 	margin-top: 0.35em;
 }
 
@@ -111,7 +111,7 @@ body {
 }
 
 .skill_list__subskills_list_item {
-	margin-left: 1em;
+	
 }
 
 /*/
@@ -154,6 +154,10 @@ time {
 .anything__that_has_title_attribute {
 	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
 	cursor: help;
+}
+
+.subskill__name {
+	margin-left: 1em;
 }
 
 /*/

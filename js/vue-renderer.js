@@ -85,7 +85,7 @@ Vue.component('skill', {
 		'max_skill_level' // Even though it is constant, I have to declare it. Nevermind.
 	],
 	template: 	'<div class="skill_list__subskills_list_item">\
-					<span>{{name}}</span>\
+					<span class="subskill__name">{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
 				</div>'
 })
