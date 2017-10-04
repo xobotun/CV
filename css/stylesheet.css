@@ -125,6 +125,7 @@ body {
 	position: relative;
 	list-style-type: none;
 	text-align: right;
+	pointer-events: all;
 }
 
 .menu__item {
@@ -133,7 +134,7 @@ body {
 }
 
 #menu a {
-		text-decoration: none
+	text-decoration: none
 }
 
 .menu__wrapper {
@@ -142,6 +143,7 @@ body {
 	top: 0;
 	left: 0;
 	padding-top: 1.5em;
+	pointer-events: none;
 }
 
 .menu__wrapper_fake_contents {
