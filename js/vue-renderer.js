@@ -121,6 +121,23 @@ Vue.component('skill-family', {
 				</div>'
 })
 
+Vue.component('book-read', {
+	props: [
+		'name',
+		'author',
+		'description',
+		'photo_urls'
+	],
+	template: 	'<div>\
+					<header class="entry__header">\
+						<span class="entry__header_qualification">{{name}}</span><br/><span class="entry__header_location entry__header_undertext">{{author}}</span>\
+					</header>\
+					{{description}}\
+					<br/>\
+					<span v-for="url in photo_urls">{{url}} </span>\
+				</div>'
+})
+
 var view_model = new Vue({
 	el: '#wrapper',
 	data: preprocessed_data
