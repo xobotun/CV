@@ -94,14 +94,14 @@ Vue.component('skillset', {
 	props: [
 		'name',
 		'level',
-		'began',
+		'experience',
 		'subskills',
 		'max_skill_level'
 	],
 	template: 	'<div class="skill_list__item">\
 					<span>{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
-					<br><time>{{began}}</time>\
+					<br><time>{{experience}}</time>\
 					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 				</div>'
 })

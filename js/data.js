@@ -125,7 +125,8 @@
 				skillsets: [{
 					name: "C#",
 					level: 30,
-					began: new Date(2016),
+					began: new Date(2016, 0, 1),
+					experience: "REPORT AS A BUG",
 					subskills: [{
 						name: "linq",
 						level: 15
@@ -142,7 +143,8 @@
 				{
 					name: "C++",
 					level: 40,
-					began: new Date(2013),
+					began: new Date(2013, 0, 1),
+					experience: "REPORT AS A BUG",
 					subskills: [{
 						name: "stdlib",
 						level: 30
@@ -151,7 +153,8 @@
 				{
 					name: "Java",
 					level: 50,
-					began: new Date(2014),
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
 					subskills: [{
 						name: "Spring",
 						level: 20
@@ -164,7 +167,8 @@
 				{
 					name: "Javascript",
 					level: 10,
-					began: new Date(2014),
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
 					subskills: [{
 						name: "Vue.js",
 						level: 30
@@ -284,6 +288,7 @@ var preprocessed_data = function(){
 	var raw_data = data();
 	
 	// 1. Inject max_skill_level constant in childs.
+	// 5. Calculate experience for skills.
 	var max_skill_level = raw_data.skills.max_skill_level;
 	
 	// For programming, design, general_skills, etc.
@@ -291,6 +296,7 @@ var preprocessed_data = function(){
 		// For each programming language.
 		for (skillset of skill_family.skillsets) {
 			skillset.max_skill_level = max_skill_level;
+			skillset.experience = calculate_experience(skillset.began);
 			// For each technology in programming language
 			for (subskill of skillset.subskills) {
 				subskill.max_skill_level = max_skill_level;
