@@ -216,6 +216,13 @@ a:hover {
 /////
 /*/
 
+
+@media screen and (max-width: 1720px) {
+	.menu__wrapper {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 880px) {
 	.section__header {
 		width: 100%;
