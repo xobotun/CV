@@ -144,11 +144,12 @@ body {
 	color: #aaaaaa;
 }
 
-time {
+.entry__header_undertext {
 	font-size: 0.7em;
 	top: -0.4em;
 	position: relative;
 	margin-left: 0.1em;
+	margin-right: 1em;
 }
 
 .anything__that_has_title_attribute {
@@ -158,6 +159,18 @@ time {
 
 .subskill__name {
 	margin-left: 1em;
+}
+
+a:link {
+	color: #888888;
+}
+
+a:visited {
+	color: #cccccc;
+}
+
+a:hover {
+	color: inherit;
 }
 
 /*/

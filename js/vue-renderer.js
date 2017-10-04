@@ -61,10 +61,10 @@ Vue.component('education-place', {
 	template: 	'<div>\
 					<header class="entry__header">\
 						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location">{{where}}</span>\
-						<br v-if="length"><time class="anything__that_has_title_attribute" v-if="length" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{length}}</time>\
+						<br v-if="length"><time class="anything__that_has_title_attribute entry__header_undertext" v-if="length" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{length}}</time>\
+						<a v-if="proof_url" v-bind:href="proof_url" class="entry__header_undertext">Подтверждение</a>\
 					</header>\
 					{{description}}\
-					<span v-if="proof_url"><br/>{{proof_url}}</span>\
 					<br/>\
 					<span v-for="url in photo_urls">{{url}} </span>\
 				</div>'
