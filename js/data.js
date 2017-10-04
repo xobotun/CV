@@ -69,7 +69,7 @@
 			proof_url: null,
 			photo_urls: ["diploma_side_1", "diploma_side_2", "diploma_side_3", "diploma_side_etc"]
 		}],
-		secondary:[{
+		secondary: [{
 			name: "CUDA и машинное обучение~",
 			where: "НОЦ \"Технопарк\"",
 			began: new Date(2016, 8, 1),
@@ -117,7 +117,7 @@
 			proof_url: null,
 			photo_urls: ["diploma_side_1"]
 		}]},
-		skills:{
+		skills: {
 			max_skill_level: 100,
 			skill_families: [{
 				name: "Программирование",
@@ -194,6 +194,39 @@
 					skillsets:[
 				]}
 			]
+		},
+		books_read: {
+			name: "Все книги, которые я когда-либо прочитал. Ну, хорошо, не все."
+			list: [{
+				name: "Приёмы объектно-ориентированного проектирования",
+				authors: "Э. Гамма, Р. Хелм, Р. Джонсон, Д. Влиссидес",
+				description: "Классическая книга, посвящённая паттернам объектно-ориентированного программирования. Содержит те знания, которыми обязательно обладать любому программисту.",
+				photo_urls: ["waagh!"]
+			},
+			{
+				name: "Код",
+				authors: "Ч. Петцольд",
+				description: "описание",
+				photo_urls: ["waagh@"]
+			},
+			{
+				name: "Что-то про джаву.",
+				authors: "человек",
+				description: "Так себе",
+				photo_urls: ["waagh#"]
+			},
+			{
+				name: "Responsive Web Design with HTML5 and CSS3",
+				authors: "Ben Frain",
+				description: "Странно в 2107 году читать книгу 2012 года выпуска, но без неё не было бы этой страницы. Или она была бы в стиле Web 2.0.",
+				photo_urls: ["waagh$"]
+			},
+			{
+				name: "Совершенный код",
+				authors: "Стив Макконнелл",
+				description: "Книга про best practices архитектуры, проектирования и кодирования. Систематизирует несистематизированные знания и привосит новые, хотя временами и очевидные.",
+				photo_urls: ["waagh%"]
+			}]
 		}
 	}
 }
