@@ -127,6 +127,7 @@
 					level: 30,
 					began: new Date(2016, 0, 1),
 					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
 					subskills: [{
 						name: "linq",
 						level: 15
@@ -145,6 +146,7 @@
 					level: 40,
 					began: new Date(2013, 0, 1),
 					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
 					subskills: [{
 						name: "stdlib",
 						level: 30
@@ -155,6 +157,7 @@
 					level: 50,
 					began: new Date(2014, 0, 1),
 					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
 					subskills: [{
 						name: "Spring",
 						level: 20
@@ -169,6 +172,7 @@
 					level: 10,
 					began: new Date(2014, 0, 1),
 					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
 					subskills: [{
 						name: "Vue.js",
 						level: 30

@@ -107,7 +107,7 @@ body {
 }
 
 .skill_list__item {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .skill_list__subskills_list_item {
@@ -186,7 +186,7 @@ body {
 	top: -0.4em;
 	position: relative;
 	margin-left: 0.1em;
-	margin-right: 1em;
+	margin-right: 1.5em;
 }
 
 .anything__that_has_title_attribute {
@@ -208,6 +208,34 @@ a:visited {
 
 a:hover {
 	color: inherit;
+}
+
+.link_that_leads_to_the_same_page {
+	color: #888888;
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+
+.link_that_leads_to_the_same_page:hover {
+	color: inherit;
+}
+
+/*/
+/////
+///    Vue.js animations
+/////
+/*/
+
+.spoiler-enter, .spoiler-leave-to {
+	opacity: 0;
+}
+
+.spoiler-enter-to, .spoiler-leave {
+	opacity: 1;
+}
+
+.spoiler-enter-active, .spoiler-leave-active {
+  transition: opacity .5s ease-in;
 }
 
 /*/
