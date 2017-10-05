@@ -101,7 +101,7 @@ Vue.component('skillset', {
 	template: 	'<div class="skill_list__item">\
 					<span>{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
-					<br><time>{{experience}}</time>\
+					<br><time class="entry__header_undertext">{{experience}}</time>\
 					<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 				</div>'
 })
