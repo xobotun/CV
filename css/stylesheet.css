@@ -228,16 +228,26 @@ a:hover {
 /////
 /*/
 
+.spoiler {
+	overflow: hidden;
+	box-shadow: inset 0px -10px 15px -20px rgba(0,0,0,1), inset 0px 10px 15px -20px rgba(0,0,0,1);
+	width: 70%;
+	display: inline-block;
+	padding: 1em 0;
+}
+
 .spoiler-enter, .spoiler-leave-to {
-	opacity: 0;
+	max-height: 0;
+	padding: 0;
 }
 
 .spoiler-enter-to, .spoiler-leave {
-	opacity: 1;
+	max-height: 200px;
+	padding: 1em 0;
 }
 
 .spoiler-enter-active, .spoiler-leave-active {
-  transition: opacity .5s ease-in;
+  transition: max-height .5s ease-in, padding .5s ease-in;
 }
 
 /*/

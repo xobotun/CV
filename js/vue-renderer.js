@@ -105,7 +105,7 @@ Vue.component('skillset', {
 					<br><time class="entry__header_undertext">{{experience}}</time>\
 					<a href="javascript:;" class="entry__header_undertext link_that_leads_to_the_same_page" v-on:click="is_spoiler_open = !is_spoiler_open">Подробности</a>\
 					<transition name="spoiler">\
-						<div v-show="is_spoiler_open">\
+						<div v-show="is_spoiler_open" class="spoiler">\
 							<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 						</div>\
 					</transition>\
