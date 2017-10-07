@@ -3,6 +3,10 @@ body {
 	margin: 1.5em;
 }
 
+html {
+	scroll-behavior: smooth;	/* Ah-h-h. Here I come, browser hell! */
+}
+
 * {
 /*	border: 1px solid black; */
 }
