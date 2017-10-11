@@ -73,8 +73,18 @@ html {
 	padding-top: 1em;
 }
 
+.section__photo {
+	display: inline-block;
+	max-width: 7rem;
+	max-height: 7rem;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+	margin: 0.5em 0.5em 0 0;
+}
+
 .bio__photo_self {
-	height: 15em;
+	height: 15rem;
 	border-radius:50%;
 	vertical-align: middle;
 }

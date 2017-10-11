@@ -66,7 +66,7 @@ Vue.component('education-place', {
 					</header>\
 					{{description}}\
 					<br/>\
-					<span v-for="url in photo_urls">{{url}} </span>\
+					<img v-for="url in photo_urls" v-bind:src="url" class="section__photo"/>\
 				</div>'
 })
 

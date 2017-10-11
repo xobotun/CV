@@ -17,7 +17,7 @@
 			professions_list: "REPORT AS A BUG",
 			alignment: "Законопослушный Добрый",
 			location: "Москва",
-			photo_url: "square_photo.jpg"
+			photo_url: "photos/240/myself.jpg"
 		},
 		job_history: [{
 			name: "Инженер-программист",
@@ -55,7 +55,7 @@
 			length: "REPORT AS A BUG",
 			description: "Двухлетнее обучение по примерно 200 академических часов в семестре от крутых людей из Mail.Ru и не только.",
 			proof_url: "https://park.mail.ru/alumni/82/3017/",
-			photo_urls: ["diploma_side_1", "diploma_side_2"]
+			photo_urls: ["photos/112/TP_face.jpg", "photos/112/TP_back.jpg"]
 		},
 		{
 			name: "Бауманец",
@@ -67,7 +67,7 @@
 			length: "REPORT AS A BUG",
 			description: "Бакалавр с кафедры ИУ6 \"Компьютерные системы и сети\". Изучали 60% программирования, 25% микроконтроллеров и схемотехники и 15% администрирования сетей. Дипломную работу по распознаванию лиц и использованием нейронных сетей защитил на \"отлично\".",
 			proof_url: null,
-			photo_urls: ["diploma_side_1", "diploma_side_2", "diploma_side_3", "diploma_side_etc"]
+			photo_urls: null
 		}],
 		secondary: [{
 			name: "CUDA и машинное обучение~",
@@ -79,7 +79,7 @@
 			length: "REPORT AS A BUG",
 			description: "Полгода введения в машинное обучение и, попутно, программирование на CUDA",
 			proof_url: "https://park.mail.ru/alumni/open-courses/",
-			photo_urls: ["diploma_side_1"]
+			photo_urls: ["photos/112/cuda.jpg"]
 		},
 		{
 			name: "Самсунг",
@@ -91,7 +91,7 @@
 			length: "REPORT AS A BUG",
 			description: "Две недели разработки на js под Tizen",
 			proof_url: null,
-			photo_urls: ["diploma_side_1"]
+			photo_urls: ["photos/112/samsung.jpg"]
 		},
 		{
 			name: "Введение в геймдизайн",
@@ -103,7 +103,7 @@
 			length: "REPORT AS A BUG",
 			description: "Полгода введения в азы геймдизайна.",
 			proof_url: "http://universarium.org/cert/0460-000359-01-16",
-			photo_urls: ["diploma_side_1"]
+			photo_urls: ["photos/112/universarium-gamedesign.jpg"]
 		},
 		{
 			name: "Выпускник",
@@ -115,7 +115,7 @@
 			length: "REPORT AS A BUG",
 			description: "Школа. Окончил с серебряной медалью.",
 			proof_url: null,
-			photo_urls: ["diploma_side_1"]
+			photo_urls: null
 		}]},
 		skills: {
 			max_skill_level: 100,
