@@ -18,7 +18,10 @@ function show_fullsize_image(lowres_image_path) {
 	hires_image_path = hires_image_path.replace(lowres_image_folder_a, hires_image_folder);
 	hires_image_path = hires_image_path.replace(lowres_image_folder_b, hires_image_folder);
 	
-	console.log(hires_image_path);
+	var photo_enlarger_main_image = document.getElementById("photo_enlarger__photo");
+	photo_enlarger_main_image.src = hires_image_path;
+	
+	view_model.show_photo_enlarger();
 }
 
 function create_closure_for_show_fullsize_image(lowres_image_path) {

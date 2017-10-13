@@ -146,5 +146,13 @@ Vue.component('book-read', {
 
 var view_model = new Vue({
 	el: '#wrapper',
-	data: preprocessed_data
+	data: preprocessed_data,
+	methods: {
+		hide_photo_enlarger: function() {
+			this.is_photo_enlarger_active = false;
+		},
+		show_photo_enlarger: function() {
+			this.is_photo_enlarger_active = true;
+		}
+	}
 })

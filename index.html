@@ -61,9 +61,11 @@
 				</div>
 			</div>
 			
-			<div v-show="is_photo_enlarger_active" id="photo_enlarger__white_background">
-				<img src="" id="photo_enlarger__photo" />
-			</div>
+			<transition name="photo_enlarger">
+				<div v-show="is_photo_enlarger_active" id="photo_enlarger__white_background" v-on:click="hide_photo_enlarger">
+					<img src="" id="photo_enlarger__photo" />
+				</div>
+			</transition>
 		</div>
 	</body>
 <html>
