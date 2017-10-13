@@ -30,7 +30,7 @@
 			workplace_description: "Организация на территории воинской части. Здесь готовили к полёту Лайку, Белку-и-Стрелку, Гагарина и других космонавтов. Здания старые, а оборудование – модернизируется.",
 			job_description: "Мы работали над установкой в центрифугу диаметром пятнадцать метров и возрастом шестьдесят лет макета кабины самолёта Т-50. Моей изначальной задачей было создание ПО для управления скоростью вращения центрифуги, но по мере развития проекта мне пришлось администрировать\
 							  физически разделённую сеть из более чем двадцати более-менее однотипных промышленных компьютеров под управлением Windows.",
-			related_skills: ["C#", "System Administration", "Написание документации"]
+			related_skills: ["C#", "Системное администрирование", "Написание документации"]
 		},
 		{
 			name: "Младший Java разработчик",
@@ -235,6 +235,22 @@
 					}]
 				},
 				{
+					name: "HTML",
+					level: 70,
+					began: new Date(2007, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
+				},
+				{
+					name: "CSS",
+					level: 60,
+					began: new Date(2011, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
+				},
+				{
 					name: "Python",
 					level: 15,
 					began: new Date(2015, 0, 1),
@@ -295,6 +311,48 @@
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
 					subskills: []
+				},
+				{
+					name: "SQL",
+					level: 50,
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "MySQL",
+						level: 60
+					},
+					{
+						name: "Oracle SQL",
+						level: 40
+					},
+					{
+						name: "MS SQL",
+						level: 20
+					}]
+				},
+				{
+					name: "Другие БД",
+					level: 20,
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "MongoDB",
+						level: 40
+					},
+					{
+						name: "Cassandra DB",
+						level: 15
+					},
+					{
+						name: "Redis",
+						level: 20
+					},
+					{
+						name: "RabbitMQ",
+						level: 25
+					}]
 				},
 				{
 					name: "Методологии",
@@ -424,6 +482,60 @@
 					{
 						name: "Объяснения",
 						level: 15
+					}]
+				},
+				{
+					name: "Системное администрирование",
+					level: 45,
+					began: new Date(2010, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Windows домашний",
+						level: 55
+					},
+					{
+						name: "Windows серверный",
+						level: 15
+					},
+					{
+						name: "Linux домашний",
+						level: 10
+					},
+					{
+						name: "Linux серверный",
+						level: 35
+					}]
+				},
+				{
+					name: "MS Office",
+					level: 75,
+					began: new Date(2007, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Word",
+						level: 80
+					},
+					{
+						name: "Excel",
+						level: 30
+					},
+					{
+						name: "Powerpoint",
+						level: 60
+					},
+					{
+						name: "Visio",
+						level: 70
+					},
+					{
+						name: "Outlook",
+						level: 15
+					},
+					{
+						name: "Access",
+						level: 25
 					}]
 				}]
 			},
