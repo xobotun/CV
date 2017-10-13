@@ -251,6 +251,10 @@
 					{
 						name: "Django",
 						level: 15
+					},
+					{
+						name: "sklearn",
+						level: 20
 					}]
 				},
 				{
@@ -267,6 +271,22 @@
 						name: "Ruby on Rails",
 						level: 10
 					}]
+				},
+				{
+					name: "Golang",
+					level: 10,
+					began: new Date(2017, 2, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
+				},
+				{
+					name: "Android",
+					level: 20,
+					began: new Date(2016, 8, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
 				},
 				{
 					name: "masm",
