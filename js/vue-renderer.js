@@ -119,10 +119,9 @@ Vue.component('skill-family', {
 		'skillsets',
 	],
 	template: 	'<div>\
-					{{name}}\
-					<br/>\
-					{{description}}\
-					<br/>\
+					<header class="entry__header">\
+						<span class="entry__header_qualification anything__that_has_title_attribute" v-bind:title="description">{{name}}</span>\
+					</header>\
 					<skillset v-for="skillset in skillsets" v-bind="skillset"></skillset>\
 				</div>'
 })
