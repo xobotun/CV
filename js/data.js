@@ -453,7 +453,7 @@
 				},
 				{
 					name: "Photoshop",
-					level: 10,
+					level: 15,
 					began: new Date(2009, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -480,6 +480,14 @@
 						name: "Smart Materials",
 						level: 5
 					}]
+				},
+				{
+					name: "Adobe Illustrator",
+					level: 10,
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
 				}]
 			},
 			{

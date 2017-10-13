@@ -100,9 +100,9 @@ Vue.component('skillset', {
 		'is_spoiler_open'
 	],
 	template: 	'<div class="skill_list__item">\
-					<span>{{name}}</span>\
+					<span class="skill_list__item__header">{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
-					<br><time class="entry__header_undertext">{{experience}}</time>\
+					<br><time class="entry__header_undertext entry__header_undertext_prefer_fixed_width">{{experience}}</time>\
 					<a href="javascript:;" class="entry__header_undertext link_that_leads_to_the_same_page" v-on:click="is_spoiler_open = !is_spoiler_open" v-if="subskills.length > 0">Подробности</a>\
 					<transition name="spoiler">\
 						<div v-show="is_spoiler_open" class="spoiler" v-if="subskills.length > 0">\

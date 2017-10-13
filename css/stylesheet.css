@@ -210,6 +210,11 @@ html {
 	margin-right: 1.5em;
 }
 
+.entry__header_undertext_prefer_fixed_width {
+	min-width: 8em;
+	display: inline-block;
+}
+
 .anything__that_has_title_attribute {
 	border-bottom: 1px dotted; /* Everything-except-Firefox-does-not-support-text-decoration-style */
 	cursor: help;
@@ -217,6 +222,13 @@ html {
 
 .subskill__name {
 	margin-left: 1em;
+	width: 36%;
+	display: inline-block;
+}
+
+.skill_list__item__header {
+	display: inline-block;
+	width: 29%;
 }
 
 a:link {
@@ -264,7 +276,7 @@ a:hover {
 	box-shadow: inset 0px -10px 15px -20px rgba(0,0,0,1), inset 0px 10px 15px -20px rgba(0,0,0,1);
 	width: 70%;
 	display: inline-block;
-	padding: 1em 0;
+	padding: 0.5em 0;
 }
 
 .spoiler-enter, .spoiler-leave-to {
