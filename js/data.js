@@ -170,6 +170,18 @@
 					{
 						name: "CppUnit",
 						level: 15
+					},
+					{
+						name: "RS-232",
+						level: 35
+					},
+					{
+						name: "RS-485",
+						level: 20
+					},
+					{
+						name: "MIL-STD-1553B",
+						level: 10
 					}]
 				},
 				{
