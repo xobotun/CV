@@ -30,7 +30,7 @@
 			workplace_description: "Организация на территории воинской части. Здесь готовили к полёту Лайку, Белку-и-Стрелку, Гагарина и других космонавтов. Здания старые, а оборудование – модернизируется.",
 			job_description: "Мы работали над установкой в центрифугу диаметром пятнадцать метров и возрастом шестьдесят лет макета кабины самолёта Т-50. Моей изначальной задачей было создание ПО для управления скоростью вращения центрифуги, но по мере развития проекта мне пришлось администрировать\
 							  физически разделённую сеть из более чем двадцати более-менее однотипных промышленных компьютеров под управлением Windows.",
-			related_skills: ["C#", "System Administration", "Teamwork"]
+			related_skills: ["C#", "System Administration", "Написание документации"]
 		},
 		{
 			name: "Младший Java разработчик",
@@ -42,7 +42,7 @@
 			experience: "REPORT AS A BUG",
 			workplace_description: "Подработка в обход трудового законодательства России.",
 			job_description: "Мне необходимо было разработать серверную часть определённого сервиса, работая в команде frontend- и Android-разработчиков.",
-			related_skills: ["Java", "Spring", "Teamwork"]
+			related_skills: ["Java", "Spring", "Hibernate", "Командная работа"]
 		}],
 		education_history: {
 			primary: [{
@@ -139,6 +139,14 @@
 					{
 						name: "mvvm",
 						level: 15
+					},
+					{
+						name: "Unity",
+						level: 20
+					},
+					{
+						name: "NUnit",
+						level: 10
 					}]
 				},
 				{
@@ -150,6 +158,18 @@
 					subskills: [{
 						name: "stdlib",
 						level: 30
+					},
+					{
+						name: "boost",
+						level: 5
+					},
+					{
+						name: "Cocos2D-x",
+						level: 25
+					},
+					{
+						name: "CppUnit",
+						level: 10
 					}]
 				},
 				{
@@ -165,11 +185,31 @@
 					{
 						name: "Hibernate",
 						level: 30
+					},
+					{
+						name: "Java SE",
+						level: 25
+					},
+					{
+						name: "Java EE",
+						level: 15
+					},
+					{
+						name: "EJB",
+						level: 5
+					},
+					{
+						name: "JUnit",
+						level: 25
+					},
+					{
+						name: "Mockito",
+						level: 55
 					}]
 				},
 				{
 					name: "Javascript",
-					level: 10,
+					level: 30,
 					began: new Date(2014, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -178,27 +218,201 @@
 						level: 30
 					},
 					{
+						name: "Vanilla JS",
+						level: 50
+					},
+					{
+						name: "jQuery",
+						level: 15
+					},
+					{
+						name: "Node.js",
+						level: 5
+					},
+					{
 						name: "Ненависть",
 						level: 60
 					}]
-				}]},
+				},
 				{
-					name: "Искусство",
-					description: "Всё, про что относится к дизайну-рисованию-творчеству.",
-					skillsets:[
-				]},
+					name: "Python",
+					level: 15,
+					began: new Date(2015, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Numpy",
+						level: 30
+					},
+					{
+						name: "Pandas",
+						level: 25
+					},
+					{
+						name: "Django",
+						level: 15
+					}]
+				},
 				{
-					name: "Общие навыки",
-					description: "Всё, что так или иначе пригождается в работе.",
-					skillsets:[
-				]},
+					name: "Ruby",
+					level: 13,
+					began: new Date(2013, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Rubocop",
+						level: 10
+					},
+					{
+						name: "Ruby on Rails",
+						level: 10
+					}]
+				},
 				{
-					name: "Прочее",
-					description: "Всё, что не вошло в вышеприведённые категории, но я зачем-то захотел внести сюда.",
-					skillsets:[
-				]}
-			]
-		},
+					name: "masm",
+					level: 35,
+					began: new Date(2014, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: []
+				},
+				{
+					name: "Методологии",
+					level: 45,
+					began: new Date(2015, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Scrum",
+						level: 35
+					},
+					{
+						name: "Kanban",
+						level: 35
+					},
+					{
+						name: "TDD",
+						level: 15
+					},
+					{
+						name: "Waterfall",
+						level: 20
+					}]
+				},
+				{
+					name: "Принципы",
+					level: 55,
+					began: new Date(2013, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "SOLID",
+						level: 40
+					},
+					{
+						name: "YAGNI",
+						level: 45
+					},
+					{
+						name: "KISS",
+						level: 25
+					},
+					{
+						name: "DRY",
+						level: 40
+					}]
+				}]
+			},
+			{
+				name: "Искусство",
+				description: "Всё, про что относится к дизайну-рисованию-творчеству.",
+				skillsets:[{
+					name: "3Ds Max",
+					level: 15,
+					began: new Date(2008, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Lowpoly Modelling",
+						level: 40
+					},
+					{
+						name: "Lowpoly UV-Unwrap",
+						level: 30
+					},
+					{
+						name: "Skeletal Animation",
+						level: 10
+					},
+					{
+						name: "Material Editing",
+						level: 5
+					},
+					{
+						name: "Vray Rendering",
+						level: 0
+					}]
+				},
+				{
+					name: "Photoshop",
+					level: 10,
+					began: new Date(2009, 0, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Ретушь",
+						level: 10
+					},
+					{
+						name: "Текстурирование",
+						level: 15
+					}]
+				},
+				{
+					name: "Substance Painter",
+					level: 35,
+					began: new Date(2017, 3, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Простые фотореалистичные текстуры",
+						level: 45
+					},
+					{
+						name: "Smart Materials",
+						level: 5
+					}]
+				}]
+			},
+			{
+				name: "Общие навыки",
+				description: "Всё, что так или иначе пригождается в работе.",
+				skillsets:[{
+					name: "Командная работа",
+					level: 35,
+					began: new Date(2012, 3, 1),
+					experience: "REPORT AS A BUG",
+					is_spoiler_open: false,
+					subskills: [{
+						name: "Общение",
+						level: 45
+					},
+					{
+						name: "Выступления",
+						level: 30
+					},
+					{
+						name: "Объяснения",
+						level: 15
+					}]
+				}]
+			},
+			{
+				name: "Прочее",
+				description: "Всё, что не вошло в вышеприведённые категории, но я зачем-то захотел внести сюда.",
+				skillsets: []
+			}
+		]},
 		books_read: {
 			name: "Все книги, которые я когда-либо прочитал. Ну, хорошо, не все.",
 			list: [{

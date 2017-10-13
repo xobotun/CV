@@ -113,6 +113,11 @@ html {
 	margin-top: 0.35em;
 }
 
+.percentage_bar_subskill {
+	width: 57.2%;	/* It just looks good. */
+	margin-right: 0%;
+}
+
 .percentage_bar__filling {
 	float: left;
 	width: 66%; /**/

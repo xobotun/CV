@@ -38,7 +38,7 @@
 				<header id="skills" class="section__header">							
 					Навыки
 				</header>
-				<div class="section__contents" is="skill-family" v-for="skill_family in skills.skill_families" v-bind="skill_family">
+				<div class="section__contents" is="skill-family" v-if="skill_family.skillsets.length > 0" v-for="skill_family in skills.skill_families" v-bind="skill_family">
 				</div>
 			</section>
 			<section class="section">

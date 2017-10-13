@@ -86,7 +86,7 @@ Vue.component('skill', {
 	],
 	template: 	'<div class="skill_list__subskills_list_item">\
 					<span class="subskill__name">{{name}}</span>\
-					<percentage-bar v-bind:level="level"></percentage-bar>\
+					<percentage-bar v-bind:level="level" class="percentage_bar_subskill"></percentage-bar>\
 				</div>'
 })
 
@@ -103,9 +103,9 @@ Vue.component('skillset', {
 					<span>{{name}}</span>\
 					<percentage-bar v-bind:level="level"></percentage-bar>\
 					<br><time class="entry__header_undertext">{{experience}}</time>\
-					<a href="javascript:;" class="entry__header_undertext link_that_leads_to_the_same_page" v-on:click="is_spoiler_open = !is_spoiler_open">Подробности</a>\
+					<a href="javascript:;" class="entry__header_undertext link_that_leads_to_the_same_page" v-on:click="is_spoiler_open = !is_spoiler_open" v-if="subskills.length > 0">Подробности</a>\
 					<transition name="spoiler">\
-						<div v-show="is_spoiler_open" class="spoiler">\
+						<div v-show="is_spoiler_open" class="spoiler" v-if="subskills.length > 0">\
 							<skill v-for="subskill in subskills" v-bind="subskill"></skill>\
 						</div>\
 					</transition>\
