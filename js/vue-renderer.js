@@ -43,7 +43,7 @@ Vue.component('work-place', {
 					</header>\
 					{{job_description}}\
 					<br/>\
-					<span v-for="skill in related_skills">{{skill}} </span>\
+					<span class="entry__skills_list">Навыки:<span v-for="skill in related_skills" class="entry__skills_list__item">{{skill}} </span></span>\
 				</div>'
 })
 

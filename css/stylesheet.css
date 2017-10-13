@@ -236,6 +236,18 @@ a:hover {
 	color: inherit;
 }
 
+.entry__skills_list {
+	margin-top: 0.5em;
+	display: inline-block;
+}
+
+.entry__skills_list__item {
+	border-radius: 0.5em;
+	background-color: #eeeeee;
+	padding: 0.1em 0.4em;
+	margin: 0 0.2em;
+}
+
 /*/
 /////
 ///    Vue.js animations
