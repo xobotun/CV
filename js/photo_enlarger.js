@@ -19,6 +19,7 @@ function show_fullsize_image(lowres_image_path) {
 	hires_image_path = hires_image_path.replace(lowres_image_folder_b, hires_image_folder);
 	
 	var photo_enlarger_main_image = document.getElementById("photo_enlarger__photo");
+	photo_enlarger_main_image.src = lowres_image_path;	// To prevent glitches when hires photo is not loaded yet.
 	photo_enlarger_main_image.src = hires_image_path;
 	
 	view_model.show_photo_enlarger();
