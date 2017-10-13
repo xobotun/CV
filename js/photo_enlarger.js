@@ -21,6 +21,10 @@ function show_fullsize_image(lowres_image_path) {
 	console.log(hires_image_path);
 }
 
+function create_closure_for_show_fullsize_image(lowres_image_path) {
+	return function() { show_fullsize_image(lowres_image_path); };
+}
+
 // Apply this function to all photos on page.
 function make_subscribution_for_all_photos() {
 	var all_sections = get_all_sections();
@@ -30,7 +34,7 @@ function make_subscribution_for_all_photos() {
 		
 		for(var j = 0; j < all_photos_in_section.length; j++) {
 			var certain_photo = all_photos_in_section[j];
-			certain_photo.onclick = function() { show_fullsize_image(certain_photo.src); }
+			certain_photo.onclick = create_closure_for_show_fullsize_image(certain_photo.src);
 		}
 	}
 }
