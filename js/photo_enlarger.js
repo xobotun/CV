@@ -1,4 +1,4 @@
-// Some constants for translating paths from low resolution photos folder to original resolution folder. Just avoid having `112` and `240` in photos names. :)
+// Some constants for translating paths from low resolution photos folder to higher resolution folder. Just avoid having `112` and `240` in photos names. :)
 const lowres_image_folder_a = "112";
 const lowres_image_folder_b = "240";
 const hires_image_folder = "1024";

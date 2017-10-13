@@ -67,7 +67,7 @@
 			length: "REPORT AS A BUG",
 			description: "Бакалавр с кафедры ИУ6 \"Компьютерные системы и сети\". Изучали 60% программирования, 25% микроконтроллеров и схемотехники и 15% администрирования сетей. Дипломную работу по распознаванию лиц и использованием нейронных сетей защитил на \"отлично\".",
 			proof_url: null,
-			photo_urls: null
+			photo_urls: ["photos/112/BMSTU_1.jpg", "photos/112/BMSTU_2.jpg", "photos/112/BMSTU_3.jpg", "photos/112/BMSTU_4.jpg", "photos/112/BMSTU_5.jpg"]
 		}],
 		secondary: [{
 			name: "CUDA и машинное обучение~",
@@ -115,7 +115,7 @@
 			length: "REPORT AS A BUG",
 			description: "Школа. Окончил с серебряной медалью.",
 			proof_url: null,
-			photo_urls: null
+			photo_urls: ["photos/112/School_1.jpg", "photos/112/School_2.jpg", "photos/112/School_3.jpg", "photos/112/School_4.jpg"]
 		}]},
 		skills: {
 			max_skill_level: 100,
