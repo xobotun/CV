@@ -124,29 +124,29 @@
 				description: "Сводка языков программирования, которыми я владею.",
 				skillsets: [{
 					name: "C#",
-					level: 30,
+					level: 35,
 					began: new Date(2016, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
 					subskills: [{
 						name: "linq",
-						level: 15
+						level: 25
 					},
 					{
 						name: "wpf",
-						level: 5
+						level: 10
 					},
 					{
 						name: "mvvm",
-						level: 15
+						level: 25
 					},
 					{
 						name: "Unity",
-						level: 20
+						level: 30
 					},
 					{
 						name: "NUnit",
-						level: 10
+						level: 15
 					}]
 				},
 				{
@@ -169,7 +169,7 @@
 					},
 					{
 						name: "CppUnit",
-						level: 10
+						level: 15
 					}]
 				},
 				{
@@ -184,7 +184,7 @@
 					},
 					{
 						name: "Hibernate",
-						level: 30
+						level: 35
 					},
 					{
 						name: "Java SE",
@@ -200,16 +200,16 @@
 					},
 					{
 						name: "JUnit",
-						level: 25
+						level: 50
 					},
 					{
 						name: "Mockito",
-						level: 55
+						level: 60
 					}]
 				},
 				{
 					name: "Javascript",
-					level: 30,
+					level: 40,
 					began: new Date(2014, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -223,7 +223,7 @@
 					},
 					{
 						name: "jQuery",
-						level: 15
+						level: 20
 					},
 					{
 						name: "Node.js",
@@ -231,7 +231,7 @@
 					},
 					{
 						name: "Ненависть",
-						level: 60
+						level: 70
 					}]
 				},
 				{
@@ -252,11 +252,19 @@
 				},
 				{
 					name: "Python",
-					level: 15,
+					level: 25,
 					began: new Date(2015, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
 					subskills: [{
+						name: "2.7",
+						level: 25
+					},
+					{
+						name: "3.6",
+						level: 15
+					},
+					{
 						name: "Numpy",
 						level: 30
 					},
@@ -290,7 +298,7 @@
 				},
 				{
 					name: "Golang",
-					level: 10,
+					level: 20,
 					began: new Date(2017, 2, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -298,7 +306,7 @@
 				},
 				{
 					name: "Android",
-					level: 20,
+					level: 40,
 					began: new Date(2016, 8, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -306,7 +314,7 @@
 				},
 				{
 					name: "masm",
-					level: 35,
+					level: 55,
 					began: new Date(2014, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -406,7 +414,7 @@
 				description: "Всё, про что относится к дизайну-рисованию-творчеству.",
 				skillsets:[{
 					name: "3Ds Max",
-					level: 15,
+					level: 25,
 					began: new Date(2008, 0, 1),
 					experience: "REPORT AS A BUG",
 					is_spoiler_open: false,
@@ -424,7 +432,7 @@
 					},
 					{
 						name: "Material Editing",
-						level: 5
+						level: 10
 					},
 					{
 						name: "Vray Rendering",
@@ -443,7 +451,7 @@
 					},
 					{
 						name: "Текстурирование",
-						level: 15
+						level: 20
 					}]
 				},
 				{
