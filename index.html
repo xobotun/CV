@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link href="css/stylesheet.css" rel="stylesheet" />
+		<link href="css/photo_enlarger.css" rel="stylesheet" />
 		<!-- 300ms is too much. Will use on-site version.
 		<script type="text/javascript" src="https://unpkg.com/vue"></script>
 		-->
@@ -58,6 +59,10 @@
 						<li class="menu__item"><a href="#books_read">Книги</a></li>
 					</menu>
 				</div>
+			</div>
+			
+			<div v-show="is_photo_enlarger_active" id="photo_enlarger__white_background">
+				<img src="" id="photo_enlarger__photo" />
 			</div>
 		</div>
 	</body>
