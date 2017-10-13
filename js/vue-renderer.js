@@ -11,8 +11,8 @@
 		'photo_url'
 	],
 	template: 	'<div>\
-					<img class="bio__photo_self" v-bind:src="photo_url"></img>\
-					<div class="bio">\
+					<img class="bio__photo_self" v-bind:src="photo_url"\
+					/><div class="bio">\
 						<span class="bio__name">{{name}}</span>\
 						<br/>\
 						<span class="bio__description">\
