@@ -17,7 +17,24 @@
 			professions_list: "REPORT AS A BUG",
 			alignment: "Законопослушный Добрый",
 			location: "Москва",
-			photo_url: "photos/240/myself.jpg"
+			photo_url: "photos/240/myself.jpg",
+			phone: "+7 916 533-25-55",
+			email: "maminov.pavel@mail.ru",
+			profiles: [{
+				name: "GitHub",
+				link: "https://github.com/xobotun",
+				img: "icons/github.svg"
+			},
+			{
+				name: "LinkedIn",
+				link: "https://www.linkedin.com/in/paul-maminov-71053b151/",
+				img: "icons/linkedin.svg"
+			},
+			{
+				name: "ВКонтакте",
+				link: "https://vk.com/id10461816",
+				img: "icons/vk.svg"
+			}]
 		},
 		job_history: [{
 			name: "Инженер-программист",
