@@ -203,6 +203,10 @@ html {
 	display: inline-block;
 }
 
+a.bio__description {
+	text-decoration: none;
+}
+
 .entry__header_qualification {
 	font-size: 1.5em;
 	font-weight: 500;
