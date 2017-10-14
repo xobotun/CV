@@ -34,6 +34,11 @@
 				name: "ВКонтакте",
 				link: "https://vk.com/id10461816",
 				img: "icons/vk.svg"
+			},
+			{
+				name: "HeadHunter",
+				link: "https://hh.ru/resume/f0b8dabbff031f44380039ed1f546f34695052",
+				img: "icons/hh.svg"
 			}]
 		},
 		job_history: [{
