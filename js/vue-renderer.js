@@ -8,7 +8,10 @@
 		'professions_list',
 		'alignment',
 		'location',
-		'photo_url'
+		'photo_url',
+		'email',
+		'phone',
+		'profiles'
 	],
 	template: 	'<div>\
 					<img class="bio__photo_self" v-bind:src="photo_url"\
@@ -21,6 +24,15 @@
 							<br/>\
 							{{location}}\
 						</span>\
+						<div class="bio__contacts">\
+							<span class="bio__description">{{phone}}</span>\
+							<br />\
+							<span class="bio__description">{{email}}</span>\
+							<br />\
+							<a v-for="profile in profiles" v-bind:href="profile.link">\
+								<img v-bind:src="profile.img" class="bio__contacts__icon" />\
+							</a>\
+						</div>\
 					</div>\
 				</div>'
 })

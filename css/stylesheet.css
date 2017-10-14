@@ -86,7 +86,7 @@ html {
 .bio__photo_self {
 	height: 15rem;
 	border-radius:50%;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .bio {
@@ -94,6 +94,20 @@ html {
 	text-align: left;
 	margin: 1.5em;
 	font-family: "Webfont", Arial, sans-serif;
+}
+
+.bio__contacts {
+	display: block;
+	margin-top: 0.5em;
+	color: #aaaaaa;
+}
+
+.bio__contacts__icon {
+	display: inline-block;
+	margin: 0.5em 0.5em 0 0;
+	color: #aaaaaa;
+	max-width: 48px;
+	max-height: 48px;
 }
 
 .entry__header {
