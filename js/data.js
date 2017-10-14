@@ -27,7 +27,7 @@
 			},
 			{
 				name: "LinkedIn",
-				link: "https://www.linkedin.com/in/paul-maminov-71053b151/",
+				link: "https://www.linkedin.com/in/xobotun",
 				img: "icons/linkedin.svg"
 			},
 			{

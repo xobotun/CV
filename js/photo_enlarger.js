@@ -9,7 +9,15 @@ function get_all_sections() {
 }
 
 function get_all_photos_in_section(dom_element) {
-	return dom_element.getElementsByTagName("img"); 
+	var all_imgs = dom_element.getElementsByTagName("img"); 
+	var all_imgs_as_array = Array.from(all_imgs);
+	var applicable_imgs = all_imgs_as_array.reduce(function(result, img) {
+		if(!img.attributes["no-enlarger"]){
+			result.push(img);
+		}
+		return result;
+	}, []);
+	return applicable_imgs;
 }
 
 function change_image_path(path, resolution_from, resolution_to) {

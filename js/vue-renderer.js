@@ -30,7 +30,7 @@
 							<a v-bind:href="\'mailto:\' + email" class="bio__description">{{email}}</a>\
 							<br />\
 							<a v-for="profile in profiles" v-bind:href="profile.link">\
-								<img v-bind:src="profile.img" class="bio__contacts__icon" />\
+								<img no-enlarger v-bind:src="profile.img" class="bio__contacts__icon" />\
 							</a>\
 						</div>\
 					</div>\
