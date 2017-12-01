@@ -308,7 +308,7 @@ a:hover {
 }
 
 .spoiler-enter-active, .spoiler-leave-active {
-  transition: max-height .5s ease-in, padding .5s ease-in;
+  /*transition: max-height .5s ease-in, padding .5s ease-in;*/
 }
 
 /*/
