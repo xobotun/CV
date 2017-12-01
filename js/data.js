@@ -42,6 +42,17 @@
 			}]
 		},
 		job_history: [{
+			name: "Java-программист",
+			where: "NTRLab",
+			began: new Date(2017, 10, 7),
+			began_text: "7 ноября 2017",
+			ended: new Date(),
+			ended_text: "н.в.",
+			experience: "REPORT AS A BUG",
+			workplace_description: "Аутсорсинговая компания с штаб-квартирой в Томске c 2000 года.",
+			job_description: "Я работал здесь над многими проектами. Из тех, что не покрыты NDA: поддержка и перевод на новый стек бекенда приложения Мосгортранса. Проработую чуть дольше, чем месяц – напишу больше проектов в портфолио.",
+			related_skills: ["Java EE", "Hibernate", "Spring", "Командная работа"]
+		},{
 			name: "Инженер-программист",
 			where: "НП \"Медэкоэргоцентр\"",
 			began: new Date(2017, 6, 20),
