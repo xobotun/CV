@@ -8,7 +8,7 @@
 			age: "REPORT AS A BUG",
 			professions: [{
 				name: "Программист",
-				level: 7
+				level: 8
 			},
 			{
 				name: "Художник",
@@ -229,11 +229,11 @@
 					is_spoiler_open: false,
 					subskills: [{
 						name: "Spring",
-						level: 20
+						level: 25
 					},
 					{
 						name: "Hibernate",
-						level: 35
+						level: 45
 					},
 					{
 						name: "Java SE",
@@ -241,19 +241,19 @@
 					},
 					{
 						name: "Java EE",
-						level: 15
+						level: 20
 					},
 					{
 						name: "EJB",
-						level: 5
+						level: 15
 					},
 					{
 						name: "JUnit",
-						level: 50
+						level: 49
 					},
 					{
 						name: "Mockito",
-						level: 60
+						level: 59
 					}]
 				},
 				{
@@ -377,6 +377,10 @@
 					is_spoiler_open: false,
 					subskills: [{
 						name: "MySQL",
+						level: 50
+					},
+					{
+						name: "PostgreSQL",
 						level: 60
 					},
 					{
@@ -404,7 +408,7 @@
 					},
 					{
 						name: "Redis",
-						level: 20
+						level: 50
 					},
 					{
 						name: "RabbitMQ",
