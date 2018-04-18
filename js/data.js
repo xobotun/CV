@@ -1,4 +1,4 @@
-﻿var data = function(){
+﻿var data_ru = function() {
 	return {
 		general: {
 			name: "Павел Маминов",
@@ -652,7 +652,7 @@
 				photo_urls: null
 			},
 			/*
-			// Так и не вспомнил, что это была за книга, но она мне не понравилась и качеством изготовления, и очень спорными моментами. Почти ничего из неё не вынес.
+			// Так и не вспомнил, что это была за книга, но она мне не понравилась и качеством изготовления, и очень спорными моментами. Почти ничего из неё не вынес.	// UPD: Это был Эффективный Код Джошуа Блоха. И там была ужасная типографская работа: одной страницы не было и замещающая её повторялась одна страница повторялась: 114→115→115→117 :(
 			{
 				name: "Что-то про джаву.",
 				author: "человек",
@@ -662,7 +662,7 @@
 			{
 				name: "Responsive Web Design with HTML5 and CSS3",
 				author: "Ben Frain",
-				description: "Странно в 2017 году читать книгу 2012 года выпуска, но без неё не было бы этой страницы. Или она была бы в стиле 2007 года.",
+				description: "Странно в 2017 году читать книгу 2012 года выпуска, но без неё не было бы этой страницы. Или она была бы в стиле 2007 года.",		// Ну, да. Сейчас она в стиле 2011.
 				photo_urls: null
 			},
 			{
@@ -674,6 +674,10 @@
 		},
 		is_photo_enlarger_active: false
 	}
+}
+
+var data_en = function() {
+	return {} // TODO
 }
 
 function calculate_age(data) {
@@ -762,8 +766,19 @@ function calculate_experience(date_began, date_ended) {
 	return experience_strings.join(" ");
 }
 
-var preprocessed_data = function(){
-	var raw_data = data();
+function get_localized_data()  {
+	var path = window.location.pathname;
+
+	if (path === "/en")
+		return data_en();
+	if (path === "/ru")
+		return data_ru();
+	
+	return data_ru();
+}
+
+var preprocessed_data = function() {
+	var raw_data = get_localized_data();
 	
 	// 1. Inject max_skill_level constant in childs.
 	// 5. Calculate experience for skills.
