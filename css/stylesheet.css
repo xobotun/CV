@@ -11,6 +11,12 @@ html {
 /*	border: 1px solid black; */
 }
 
+/* Emulate span behaviour while keeping semantics */
+h1, h2, h3 {
+	margin: 0;
+	font-weight: 400;
+}
+
 /*/
 /////
 ///    Blocks & Elements styles

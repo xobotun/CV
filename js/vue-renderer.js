@@ -16,15 +16,14 @@
 	template: 	'<div>\
 					<img class="bio__photo_self" v-bind:src="photo_url"\
 					/><div class="bio">\
-						<span class="bio__name">{{name}}</span>\
-						<br/>\
-						<span class="bio__description">\
+						<h1 class="bio__name">{{name}}</h1>\
+						<h2 class="bio__description">\
 							{{race}}, {{gender}}, {{age}}, {{alignment}}<br/>\
 							{{professions_list}}\
 							<br/>\
 							{{location}}\
-						</span>\
-						<div class="bio__contacts">\
+						</h2>\
+						<h3 class="bio__contacts">\
 							<a v-bind:href="\'tel:\' + phone" class="bio__description">{{phone}}</a>\
 							<br />\
 							<a v-bind:href="\'mailto:\' + email" class="bio__description">{{email}}</a>\
@@ -32,7 +31,7 @@
 							<a v-for="profile in profiles" v-bind:href="profile.link">\
 								<img no-enlarger v-bind:src="profile.img" class="bio__contacts__icon" />\
 							</a>\
-						</div>\
+						</h3>\
 					</div>\
 				</div>'
 })
@@ -50,7 +49,7 @@ Vue.component('work-place', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location anything__that_has_title_attribute" v-bind:title="workplace_description">{{where}}</span>\
+						<h3 class="entry__header_qualification">{{name}}</h3><span class="entry__header_location anything__that_has_title_attribute" v-bind:title="workplace_description">{{where}}</span>\
 						<br v-if="experience"><time class="anything__that_has_title_attribute" v-if="experience" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{experience}}</time>\
 					</header>\
 					{{job_description}}\
@@ -72,7 +71,7 @@ Vue.component('education-place', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="entry__header_qualification">{{name}}</span><span class="entry__header_location">{{where}}</span>\
+						<h3 class="entry__header_qualification">{{name}}</h3><span class="entry__header_location">{{where}}</span>\
 						<br v-if="length"><time class="anything__that_has_title_attribute entry__header_undertext" v-if="length" v-bind:title="\'С \' + began_text + \' по \' + ended_text">{{length}}</time>\
 						<a v-if="proof_url" v-bind:href="proof_url" class="entry__header_undertext">Подтверждение</a>\
 					</header>\
@@ -132,7 +131,7 @@ Vue.component('skill-family', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="entry__header_qualification anything__that_has_title_attribute" v-bind:title="description">{{name}}</span>\
+						<h3 class="entry__header_qualification anything__that_has_title_attribute" v-bind:title="description">{{name}}</h3>\
 					</header>\
 					<skillset v-for="skillset in skillsets" v-bind="skillset"></skillset>\
 				</div>'
@@ -147,7 +146,7 @@ Vue.component('book-read', {
 	],
 	template: 	'<div>\
 					<header class="entry__header">\
-						<span class="entry__header_qualification">{{name}}</span><br/><span class="entry__header_location entry__header_undertext">{{author}}</span>\
+						<h3 class="entry__header_qualification">{{name}}</h3><br/><span class="entry__header_location entry__header_undertext">{{author}}</span>\
 					</header>\
 					{{description}}\
 					<br/>\
