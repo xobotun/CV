@@ -62,12 +62,11 @@
 					</menu>
 				</div>
 			</div>
-			
-			<transition name="photo_enlarger">
-				<div v-show="is_photo_enlarger_active" id="photo_enlarger__white_background" v-on:click="hide_photo_enlarger">
-					<img src="" id="photo_enlarger__photo" />
-				</div>
-			</transition>
+
+			<div id="photo_enlarger__white_background" class="photo_enlarger__hidden">
+				<img src="" id="photo_enlarger__photo" />
+			</div>
+
 		</div>
 	</body>
 <html>

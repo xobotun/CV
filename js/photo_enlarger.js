@@ -30,12 +30,18 @@ function get_path_for_bigger_image(lowres_image_path) {
 	return hires_image_path;
 }
 
+function toggle_photo_enlarger_display() {
+	var photo_enlarger_div = document.getElementById("photo_enlarger__white_background");
+	photo_enlarger_div.classList.toggle("photo_enlarger__hidden");
+	photo_enlarger_div.classList.toggle("photo_enlarger__visible");
+}
+
 // This will show picture on popup.
 function show_image_on_popup(image_path) {
 	var photo_enlarger_main_image = document.getElementById("photo_enlarger__photo");
 	photo_enlarger_main_image.src = image_path;
 	
-	view_model.show_photo_enlarger();
+	toggle_photo_enlarger_display();
 }
 
 function create_closure_for_show_fullsize_image(lowres_image_path) {
@@ -54,15 +60,18 @@ function make_subscribution_for_all_photos() {
 		
 		for(var j = 0; j < all_photos_in_section.length; j++) {
 			var certain_photo = all_photos_in_section[j];
-			certain_photo.onclick = create_closure_for_show_fullsize_image(certain_photo.src);
+			certain_photo.addEventListener("click", create_closure_for_show_fullsize_image(certain_photo.src));
 		}
 	}
+	
+	var photo_enlarger_div = document.getElementById("photo_enlarger__white_background");
+	photo_enlarger_div.addEventListener("click", toggle_photo_enlarger_display);
 }
 
 // Script main body.
-if(document.readyState === "complete") {
+if(document.readyState !== "loading") {
 	make_subscribution_for_all_photos();
 }
 else {
-  document.addEventListener("DOMContentLoaded", make_subscribution_for_all_photos, false);
+  document.addEventListener("DOMContentLoaded", make_subscribution_for_all_photos);
 }

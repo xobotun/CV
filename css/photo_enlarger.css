@@ -24,6 +24,14 @@
 	box-shadow: 0px 0px 20px 20px rgba(255,255,255,1);
 }
 
+.photo_enlarger__hidden {
+	visibility: hidden;
+}
+
+.photo_enlarger__visible {
+	visibility: visible;
+}
+
 /*/
 /////
 ///    Text styles
