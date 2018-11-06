@@ -303,6 +303,15 @@ a:hover {
 	padding: 0.5em 0;
 }
 
+.spoiler__hidden {
+	visibility: hidden;
+	height: 0;
+}
+
+.spoiler__visible {
+	visibility: visible;
+}
+
 .spoiler-enter, .spoiler-leave-to {
 	max-height: 0;
 	padding: 0;
