@@ -65,6 +65,11 @@
         "name": "HeadHunter",
         "link": "https://hh.ru/resume/f0b8dabbff031f44380039ed1f546f34695052",
         "img": "https://cv.xobotun.com/icons/hh.svg"
+      },
+	  {
+        "name": "Мой круг",
+        "link": "https://moikrug.ru/xobotun",
+        "img": "https://cv.xobotun.com/icons/moikrug.svg"
       }
     ]
   },
