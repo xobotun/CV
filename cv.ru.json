@@ -146,6 +146,18 @@
       ]
     },
     {
+      "name": "Java Certified Associate",
+      "where": "Oracle",
+      "type": "Secondary",
+      "began": "2019-05-22T09:30:00.000+03:00",
+      "ended": "2019-05-22T11:00:00.000+03:00",
+      "description": "Сертификат, подтверждающий мои навыки программирования на Java. Или десять тысяч рублей, выброшенных на ветер... Добавляет веса на собеседованиях.",
+      "proof_url": "https://www.youracclaim.com/earner/earned/badge/bc9aba84-2491-4159-8a31-0fd7485ec2be",
+      "photo_urls": [
+        "photos/112/oca.jpg"
+      ]
+    },
+    {
       "name": "CUDA и машинное обучение~",
       "where": "НОЦ \"Технопарк\"",
       "type": "Secondary",

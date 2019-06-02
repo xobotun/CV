@@ -108,6 +108,10 @@ h1, h2, h3 {
 	color: #aaaaaa;
 }
 
+.bio__contacts  a {
+	text-decoration: none;
+}
+
 .bio__contacts__icon {
 	display: inline-block;
 	margin: 0.5em 0.5em 0 0;
