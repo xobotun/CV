@@ -2,16 +2,19 @@
   "meta": {
     "title": "Java developer Paul Maminov ~ Résumé",
     "lang": "en",
+    "description": "Java developer Paul Maminov. More than two years of server-side Java development experience. Spring and Java EE.",
     "localization": {
-      "home": "В начало",
-      "job_history": "История работы",
-      "education_history": "Образование",
-      "skills": "Навыки",
-      "books_read": "Книги",
-      "proof": "Подтверждение",
-      "from_date": "С",
-      "to_date": "по",
-      "moar": "Подробности"
+      "home": "Home",
+      "job_history": "Job history",
+      "education_history": "Education",
+      "skills": "Skills",
+      "books_read": "Books read",
+      "proof": "Proof",
+      "from_date": "From",
+      "to_date": "to",
+      "now": "now",
+      "moar": "More",
+	  "weird_symbol": "﷽"
     },
     "languages": [
       {
@@ -25,23 +28,23 @@
     ]
   },
   "general": {
-    "name": "Павел Маминов",
-    "race": "Человек",
-    "gender": "Мужчина",
-    "birthday": "1996-04-09T20:00:00.000Z",
+    "name": "Paul Maminov",
+    "race": "Human",
+    "gender": "Male",
+    "birthday": "1996-04-10T00:00:00.000+03:00",
     "professions": [
       {
-        "name": "Программист",
+        "name": "Programmer",
         "level": 8
       },
       {
-        "name": "Художник",
+        "name": "Artist",
         "level": 3
       }
     ],
     "professions_list": "REPORT AS A BUG",
-    "alignment": "Законопослушный Добрый",
-    "location": "Москва",
+    "alignment": "Lawful Good",
+    "location": "Moscow",
     "photo_url": "https://cv.xobotun.com/photos/240/myself.jpg",
     "phone": "+7 916 533-25-55",
     "email": "maminov.pavel@mail.ru",
@@ -65,59 +68,65 @@
         "name": "HeadHunter",
         "link": "https://hh.ru/resume/f0b8dabbff031f44380039ed1f546f34695052",
         "img": "https://cv.xobotun.com/icons/hh.svg"
+      },
+	  {
+        "name": "Мой круг",
+        "link": "https://moikrug.ru/xobotun",
+        "img": "https://cv.xobotun.com/icons/moikrug.svg"
       }
     ]
   },
   "job_history": [
     {
-      "name": "Java-программист",
+      "name": "Java developer",
       "where": "NTRLab",
-      "began": "2017-11-06T21:00:00.000Z",
-      "workplace_description": "Аутсорсинговая компания с штаб-квартирой в Томске c 2000 года.",
-      "job_description": "99% рабочего времени было потрачено на поддержку и перевод бекенда приложения Мосгортранса с набора jar'ников на WildFly. Это был и есть крайне длинный проект, который начала не наша компания и закончу, по видимости, не я. Есть множество проектов с тоннами легаси-кода. \t\t\tЗдесь подобного кода тоже достаточно, но проект сравнительно молодой: был начат примерно в 2015 году и пережил переход с python на \"микросервисную\" Java SE, с Elasticsearch на PostgreSQL и с Java SE на Java EE. Сначала я занимался написанием определителя маршрутов транспортных средств \t\t\tпо их телеметрии, затем интегрировал доставшийся мне отдельный проект в глобальный ear'ник, а затем наш тимлид уволился и нас бросили на затыкание оставшихся брешей и доработку фич. Затем наступил этап, когда мы были сами себе тимлиды, архитекторы и девопсы, надо было только выполнять \t\t\tтаски в Jira и отмечать время. Но с опытным специалистом всё же было приятнее работать.",
+      "began": "2017-11-07T00:00:00.000+03:00",
+	  "ended": null,
+      "workplace_description": "Outsourcing company based in Tomsk since 2000.",
+      "job_description": "Past year and a half there were three large projects:<br/>• <b>Mosgortrans</b>, Yandex.Transport analogue, that we moved from multiple jar-files to a ear. From \"microservices\" Java SE, to Java EE and from Elasticsearch to PostgreSQL. My largest achievement there – creation of a daily incremental data update for mobile devices sized 4 MiB against 300 MiB monthly updates via application stores.<br/>• <b>VelocityVue</b>, customizable checklist for American construction companies, we have received from other company for support and development. My main achivement – significant reduction of page loading time for the end users from ~5 to ~0.3 seconds by optimizing DB requests, caching and usage of paginators.<br/>• <b>S7</b>, where I am fixing bugs and developing new functionality for internal product related to business lounges.",
       "related_skills": [
+        "Spring",
         "Java EE",
         "Hibernate",
-        "Spring",
-        "Командная работа"
+        "Teamwork"
       ]
     },
     {
-      "name": "Инженер-программист",
-      "where": "НП \"Медэкоэргоцентр\"",
-      "began": "2017-07-19T21:00:00.000Z",
-      "ended": "2017-11-03T21:00:00.000Z",
-      "workplace_description": "Организация на территории воинской части. Здесь готовили к полёту Лайку, Белку-и-Стрелку, Гагарина и других космонавтов. Здания старые, но в процессе капитального ремонта, и оборудование – модернизируется.",
-      "job_description": "Мы работали над установкой в центрифугу диаметром пятнадцать метров и возрастом шестьдесят лет макета кабины самолёта Т-50. Моей изначальной задачей было создание ПО для управления скоростью вращения центрифуги, но по мере развития проекта мне пришлось администрировать\t\t\t\t\t\t\t  физически разделённую сеть из более чем двадцати более-менее однотипных промышленных компьютеров под управлением Windows. А затем на мои плечи внезапно упало бремя документирования всей компьютерной части проекта: руководств по включению, пользованию и т.п., и десятков\t\t\t\t\t\t\t  ГОСТовских диаграмм. Прям как второй диплом.",
+      "name": "Engineer-programmer",
+      "where": "NC \"MedEcoErgoCenter\"",
+      "began": "2017-07-20T00:00:00.000+03:00",
+      "ended": "2017-11-04T00:00:00.000+03:00",
+      "workplace_description": "Organization located at the acting military unit. Here were trained Laika, Belka and Strelka, Gagarin and other cosmonauts.",
+      "job_description": "We were working on installing dummy T-50 cockpit into a fifteen-meter, fifty-years-old centrifuge. Wrote a program for translating the modelled plane acceleration to the voltage on radio tubes (sic!). Afterwards I suddenly was not doing anything worthy for two months straight, only writing documentation and setting industrial computers up.",
       "related_skills": [
         "C#",
-        "Системное администрирование",
-        "Написание документации"
+        "System administration",
+        "Documentation wrtiting"
       ]
     },
     {
-      "name": "Младший Java разработчик",
-      "where": "Кое-где",
-      "began": "2016-06-30T21:00:00.000Z",
-      "ended": "2017-04-30T21:00:00.000Z",
-      "workplace_description": "Подработка в обход трудового законодательства России.",
-      "job_description": "Мне необходимо было разработать серверную часть внутреннего программного продукта, работая в команде frontend- и Android-разработчиков.",
+      "name": "Junior Java developer",
+      "where": "Freelance",
+      "began": "2016-06-31T00:00:00.000+03:00",
+      "ended": "2017-04-31T00:00:00.000+03:00",
+      "workplace_description": "Part time job bypassing the labor law in Russia.",
+      "job_description": "Developed server-side for a factory internal product. Helped the lead developer, implemented RESTlike API for both frontend- и Android-developers.",
       "related_skills": [
         "Java",
         "Spring",
         "Hibernate",
-        "Командная работа"
+        "Teamwork"
       ]
     }
   ],
   "education_history": [
     {
-      "name": "Системный архитектор",
-      "where": "НОЦ \"Технопарк\"",
+      "name": "System architect",
+      "where": "SEC \"Technopark\"",
       "type": "Primary",
-      "began": "2015-09-09T21:00:00.000Z",
-      "ended": "2017-08-27T21:00:00.000Z",
-      "description": "Двухлетнее обучение на проектах по приблизительно 220 академических часов в семестре от крутых людей из Mail.Ru, ABBYY и не только. Обучали практически всему: программированию на Java, python, js и С++, разработке архитектуры и разработке интерфейсов, MySQL и её индексам,\t\t\t\t\t\t  MongoDB, методологиям командной разработки, базовому управлению персоналом и временем и искусству выступления.",
+      "began": "2015-09-10T00:00:00.000+03:00",
+      "ended": "2017-08-28T00:00:00.000+03:00",
+      "description": "Two years of project-based education for about 220 hours per semester given by cool people from Mail.Ru, ABBYY and others. We were tauhght almost everything: programming on Java, python, js and С++, architecture desing and interface design, MySQL and its indices, MongoDB, team development ways, basic time and human resources management and art of speech. One semester we even took the first place.",
       "proof_url": "https://park.mail.ru/alumni/82/3017/",
       "photo_urls": [
         "photos/112/TP_face.jpg",
@@ -125,12 +134,12 @@
       ]
     },
     {
-      "name": "Бакалавр",
-      "where": "МГТУ им. Н. Э. Баумана",
+      "name": "Bachelor",
+      "where": "BMSTU",
       "type": "Primary",
-      "began": "2013-07-31T20:00:00.000Z",
-      "ended": "2017-06-19T21:00:00.000Z",
-      "description": "Бакалавр с кафедры ИУ6 \"Компьютерные системы и сети\" по специальности 09.03.01, что бы это ни значило. Изучали 60% программирования, 25% микроконтроллеров и схемотехники и 15% администрирования сетей. Странно, что не преподавали практики программирования,\t\t\t\t\t\t  но зато очень хорошо объяснили работу процессора. Матанализ, линейная алгебра и теория вероятностей – в комплекте. Дипломную работу по распознаванию лиц с использованием нейронных сетей защитил на \"отлично\".",
+      "began": "2013-08-01T00:00:00.000+03:00",
+      "ended": "2017-06-20T00:00:00.000+03:00",
+      "description": "Bachelor from IU6 cathedral \"Computer Systems and Networks\" on speciality 09.03.01, whatever it means. Learned 60% of programming, 25% microcontrollers and circuit design and 15% network administration. It's weird we weren't taught best practices of programming. However, we've understood CPU architecture very well. Mathematical analysis, linear algebra and probability theory – all packed. Thesis on the face recognition using neural networks done on \"A\".",
       "proof_url": null,
       "photo_urls": [
         "photos/112/BMSTU_1.jpg",
@@ -141,48 +150,60 @@
       ]
     },
     {
-      "name": "CUDA и машинное обучение~",
-      "where": "НОЦ \"Технопарк\"",
+      "name": "Java Certified Associate",
+      "where": "Oracle",
       "type": "Secondary",
-      "began": "2016-08-31T21:00:00.000Z",
-      "ended": "2017-01-31T21:00:00.000Z",
-      "description": "Полтора месяца программирование на CUDA и полгода введения в машинное обучение. В качестве выпускного проекта был сделан классификатор монет по их изображениям. Правда, он сделан \"в лоб\", и поддерживает только монеты от пяти копеек до десяти не-юбилейных рублей,\t\t\t\t\t\t  но всё же классифицирует.",
+      "began": "2019-05-22T09:30:00.000+03:00",
+      "ended": "2019-05-22T11:00:00.000+03:00",
+      "description": "Certificate that confirms my Java programming skills. Or hundred and a half dollars thrown into nothingness... Adds more weight for this resume.",
+      "proof_url": "https://www.youracclaim.com/earner/earned/badge/bc9aba84-2491-4159-8a31-0fd7485ec2be",
+      "photo_urls": [
+        "photos/112/oca.jpg"
+      ]
+    },
+    {
+      "name": "CUDA and machine learning~",
+      "where": "SEC \"Technopark\"",
+      "type": "Secondary",
+      "began": "2016-09-01T00:00:00.000+03:00",
+      "ended": "2017-02-01T00:00:00.000+03:00",
+      "description": "A month and a half of CUDA programming and half a year introduction into machine learning. As a graduation project I did a coin image-based classifier. It is not perfect and classifies only fixed set of coin types, it is working pretty well.",
       "proof_url": "https://park.mail.ru/alumni/open-courses/",
       "photo_urls": [
         "photos/112/cuda.jpg"
       ]
     },
     {
-      "name": "Веб-приложения на Tizen",
+      "name": "Web applications on Tizen",
       "where": "Samsung R&D Institute Rus",
       "type": "Secondary",
-      "began": "2016-07-11T21:00:00.000Z",
-      "ended": "2016-07-25T21:00:00.000Z",
-      "description": "Производственная летняя практика на базе Самсунга. Две недели разработки приложений на js под Tizen: начиная наручными часами и заканчивая телевизорами. Правда, процессора нет ни там, ни там.",
+      "began": "2016-07-12T00:00:00.000+03:00",
+      "ended": "2016-07-26T00:00:00.000+03:00",
+      "description": "Summer practice in Samsung. Two weeks of developing js web applications on Tizen: starting with wearable watches and up to TVs. Though all of them lack CPU.",
       "proof_url": null,
       "photo_urls": [
         "photos/112/samsung.jpg"
       ]
     },
     {
-      "name": "Введение в геймдизайн",
-      "where": "Универсариум",
+      "name": "Introduction into game design",
+      "where": "Universarium",
       "type": "Secondary",
-      "began": "2016-01-31T21:00:00.000Z",
-      "ended": "2016-03-31T21:00:00.000Z",
-      "description": "Полгода введения в азы геймдизайна: начиная от простого описания идеи игры и референсов, заканчивая разработкой простого дизайн-документа и описанием собираемой статистики. Неплохо систематизирует знания, полученные в ходе прохождения многих игр.",
+      "began": "2016-02-01T00:00:00.000+03:00",
+      "ended": "2016-04-01T00:00:00.000+03:00",
+      "description": "Half a year of introducting into game design: starting from simple idea and references description, ending with creation of a design document and description of collected statitics. Not bad in systematising knowledge received while playing all the games.",
       "proof_url": "http://universarium.org/cert/0460-000359-01-16",
       "photo_urls": [
         "photos/112/universarium-gamedesign.jpg"
       ]
     },
     {
-      "name": "Выпускник",
-      "where": "Экономическая школа-лицей",
+      "name": "Graduate",
+      "where": "Economical school",
       "type": "Secondary",
-      "began": "2002-08-31T20:00:00.000Z",
-      "ended": "2013-05-31T20:00:00.000Z",
-      "description": "Школа, одна из многих. Где-то в страших классах я начал становиться программистом. Окончил с серебряной медалью.",
+      "began": "2002-09-01T00:00:00.000+03:00",
+      "ended": "2013-06-01T00:00:00.000+03:00",
+      "description": "School, one of many. Somewhere in elder grades I started becoming the programmer. Graduated with silver medal.",
       "proof_url": null,
       "photo_urls": [
         "photos/112/School_1.jpg",
@@ -695,6 +716,24 @@
         "name": "Совершенный код",
         "author": "Стив Макконнелл",
         "description": "Книга про best practices архитектуры, проектирования и кодирования. Систематизирует несистематизированные знания и привосит новые, хотя временами и очевидные.",
+        "photo_urls": null
+      },
+      {
+        "name": "Структуры данных и алгоритмы Java",
+        "author": "Роберт Лафоре",
+        "description": "Книга, описывающая базовые алгоритмы, которыее должно знать каждому. Написана для начинающих, но я читал её для освежения в памяти.",
+        "photo_urls": null
+      },
+      {
+        "name": "OCA Java SE 8 Cerrtification Guide",
+        "author": "Mala Gupta",
+        "description": "Очень много воды, но если научиться её отбрасывать, то книга даёт достойнейшим образом понимание экзаменационных вопросов.",
+        "photo_urls": null
+      },
+      {
+        "name": "OCA Practice Tests",
+        "author": "Scott Selikoff & Jeanne Boyarsky",
+        "description": "Набор тестов, превосходно помогающих подготовиться к экзамену.",
         "photo_urls": null
       }
     ]
