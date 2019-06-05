@@ -77,6 +77,7 @@ h1, h2, h3 {
 	left: 1.5em;
 	text-align: center;
 	padding-top: 1em;
+	min-width: 880px;
 }
 
 .section__photo {
@@ -245,6 +246,7 @@ a.bio__description {
 	font-size: 0.7em;
 	font-weight: 900;
 	color: #aaaaaa;
+	white-space: nowrap;
 }
 
 .entry__header_undertext {
@@ -308,6 +310,7 @@ a:hover {
 	background-color: #eeeeee;
 	padding: 0.1em 0.4em;
 	margin: 0 0.2em;
+	white-space: nowrap;
 }
 
 /*/
@@ -360,6 +363,12 @@ a:hover {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	#lang {
+		padding-right: 2.5em;
+	}
+}
+
 @media screen and (max-width: 880px) {
 	.section__header {
 		width: 100%;
@@ -386,10 +395,11 @@ a:hover {
 	}
 	
 	.section__firefox-has-no-column-span-since-2010 {
-		height: 27em;
+		height: 31em;
 	}
 	
 	.section__contents_site_header {
-		height: 27em;
+		height: 31em;
+		min-width: 0;
 	}
 }
