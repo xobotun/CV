@@ -73,6 +73,11 @@
         "name": "Мой круг",
         "link": "https://moikrug.ru/xobotun",
         "img": "https://cv.xobotun.com/icons/moikrug.svg"
+      },
+	  {
+        "name": "Stack Overflow",
+        "link": "https://stackoverflow.com/users/7643283/xobotun",
+        "img": "https://cv.xobotun.com/icons/so-todo.svg"
       }
     ]
   },
@@ -83,7 +88,7 @@
       "began": "2017-11-07T00:00:00.000+03:00",
 	  "ended": null,
       "workplace_description": "Outsourcing company based in Tomsk since 2000.",
-      "job_description": "Past year and a half there were three large projects:<br/>• <b>Mosgortrans</b>, Yandex.Transport analogue, that we moved from multiple jar-files to a ear. From \"microservices\" Java SE, to Java EE and from Elasticsearch to PostgreSQL. My largest achievement there – creation of a daily incremental data update for mobile devices sized 4 MiB against 300 MiB monthly updates via application stores.<br/>• <b>VelocityVue</b>, customizable checklist for American construction companies, we have received from other company for support and development. My main achivement – significant reduction of page loading time for the end users from ~5 to ~0.3 seconds by optimizing DB requests, caching and usage of paginators.<br/>• <b>S7</b>, where I am fixing bugs and developing new functionality for internal product related to business lounges.",
+      "job_description": "Past year and a half there were three large projects:<br/>• <b>Mosgortrans</b>, Yandex.Transport analogue, that we moved from multiple jar-files to a ear. From \"microservices\" Java SE, to Java EE and from Elasticsearch to PostgreSQL. My largest achievement there – creation of a daily incremental data update for mobile devices sized 4 MiB against 300 MiB monthly updates via application stores.<br/>• <b>VelocityVue</b>, customizable checklist for American construction companies, we have received from other company for support and development. My main achivement – significant reduction of page loading time for the end users from ~5 to ~0.3 seconds by optimizing DB requests, caching and usage of paginators.<br/>• <b>S7</b>, where I fixed bugs and implemented new features for an internal product for business lounge visitors accounting. No large achievements, but on this project I got a gis of how to measure tasks time more precisely and did them within that time. <br/>• <b>MOESK</b>, middleware API adapter between already existing website and mobile application, but with better validation and additional features. WIP.",
       "related_skills": [
         "Spring",
         "Java EE",
