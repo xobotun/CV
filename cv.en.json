@@ -2,7 +2,7 @@
   "meta": {
     "title": "Java developer Paul Maminov ~ Résumé",
     "lang": "en",
-    "description": "Java developer Paul Maminov. More than two years of server-side Java development experience. Spring and Java EE.",
+    "description": "Java developer Paul Maminov. More than three years of server-side Java development experience. Spring and Java EE.",
     "localization": {
       "home": "Home",
       "job_history": "Job history",
@@ -35,16 +35,16 @@
     "professions": [
       {
         "name": "Programmer",
-        "level": 8
+        "level": 9
       },
       {
         "name": "Artist",
-        "level": 3
+        "level": 2
       }
     ],
     "professions_list": "REPORT AS A BUG",
     "alignment": "Lawful Good",
-    "location": "Moscow",
+    "location": "Russia, Moscow",
     "photo_url": "https://cv.xobotun.com/photos/240/myself.jpg",
     "phone": "+7 916 533-25-55",
     "email": "maminov.pavel@mail.ru",
